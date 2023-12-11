@@ -16,5 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: "roboto-reg";
+  src: url("../../public/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("../../public/fonts/roboto-regular-webfont.woff") format("woff"),
+    url("../../public/fonts/Roboto-Regular.ttf") format("ttf");
+}
+
 body {
+  font-family: "roboto-reg", sans-serif;
 }
