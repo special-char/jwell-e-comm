@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config: Config = {
 	content: [
@@ -8,7 +9,13 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		fontFamily: {
+			sans: ["var(--font-inter)", ...fontFamily.sans],
+		},
 		extend: {
+			colors: {
+				green: "rgba(var(--color-green) / <alpha-value>)",
+			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":

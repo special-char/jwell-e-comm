@@ -2,27 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 @font-face {
-  font-family: "roboto-reg";
-  src: url("../../public/fonts/roboto-regular-webfont.woff2") format("woff2"),
-    url("../../public/fonts/roboto-regular-webfont.woff") format("woff"),
-    url("../../public/fonts/Roboto-Regular.ttf") format("ttf");
+	font-family: "roboto-reg";
+	src: url("../../public/fonts/roboto-regular-webfont.woff2") format("woff2"),
+		url("../../public/fonts/roboto-regular-webfont.woff") format("woff"),
+		url("../../public/fonts/Roboto-Regular.ttf") format("ttf");
 }
 
-body {
-  font-family: "roboto-reg", sans-serif;
+@layer base {
+	:root {
+		--color-green: 61 93 81;
+	}
+
+	body {
+		@apply font-sans;
+	}
 }
