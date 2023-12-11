@@ -3,18 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "roboto-reg";
-	src: url("../../public/fonts/roboto-regular-webfont.woff2") format("woff2"),
-		url("../../public/fonts/roboto-regular-webfont.woff") format("woff"),
-		url("../../public/fonts/Roboto-Regular.ttf") format("ttf");
+  font-family: "roboto-reg";
+  src: url("../../public/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("../../public/fonts/roboto-regular-webfont.woff") format("woff"),
+    url("../../public/fonts/Roboto-Regular.ttf") format("ttf");
 }
 
 @layer base {
-	:root {
-		--color-green: 61 93 81;
-	}
+  :root {
+    --color-green: 59 93 80;
+    --color-yellow: 249 191 41;
+    --color-black: 47 47 47;
+    --color-gray: 106 106 106;
+    --color-white: 239 242 241;
+  }
 
-	body {
-		@apply font-sans;
-	}
+  body {
+    @apply font-sans;
+  }
 }
