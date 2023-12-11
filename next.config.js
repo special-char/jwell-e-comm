@@ -39,9 +39,9 @@ const nextConfig = {
 	images: {
 		domains: [],
 	},
-	experimental: {
-		appDir: true,
-	},
+	// experimental: {
+	// 	appDir: true,
+	// },
 };
 
 module.exports = nextConfig;
