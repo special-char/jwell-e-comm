@@ -3,9 +3,6 @@ import TestimonialSection from "@/containers/TestimonialSection";
 import WhyChooseUsSection from "@/containers/WhyChooseUs";
 import Link from "next/link";
 import { homePageBanner } from "@/lib/data";
-import { shopBannerData } from "@/lib/data";
-import { aboutUsBanner } from "@/lib/data";
-import { contactUsBanner } from "@/lib/data";
 import Footer from "@/components/common/Footer";
 
 export default function Home() {
@@ -23,9 +20,6 @@ export default function Home() {
 			<WhyChooseUsSection />
 			<TestimonialSection />
 			<Banner data={homePageBanner} />
-			<Banner data={shopBannerData} />
-			<Banner data={aboutUsBanner} />
-			<Banner data={contactUsBanner} />
 			<Footer />
 		</main>
 	);

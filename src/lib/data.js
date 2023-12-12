@@ -1,3 +1,8 @@
+import Facebook from "@/public/icons/facebook.svg";
+import Twitter from "@/public/icons/twitter.svg";
+import Instagram from "@/public/icons/instagram.svg";
+import Linkedin from "@/public/icons/linkedin.svg";
+
 //----------------------------NAVBAR----------------------------------//
 export const navbarData = {
 	heading1: "furni",
@@ -152,22 +157,22 @@ export const footerData = {
 		{
 			id: 1,
 			name: "facebook",
-			icon: "",
+			icon: Facebook,
 		},
 		{
 			id: 2,
 			name: "Twitter",
-			icon: "",
+			icon: Twitter,
 		},
 		{
 			id: 3,
 			name: "Instagram",
-			icon: "",
+			icon: Instagram,
 		},
 		{
 			id: 4,
 			name: "Linkedin",
-			icon: "",
+			icon: Linkedin,
 		},
 	],
 	footerLinks: [
@@ -175,69 +180,69 @@ export const footerData = {
 			{
 				id: 1,
 				title: "About us",
-				link: "",
+				link: "/",
 			},
 			{
 				id: 2,
 				title: "Service",
-				link: "",
+				link: "/",
 			},
 
 			{
 				id: 3,
 				title: "Contact us",
-				link: "",
+				link: "/",
 			},
 		],
 		[
 			{
 				id: 1,
 				title: "Support",
-				link: "",
+				link: "/",
 			},
 			{
 				id: 2,
 				title: "Knowledge base",
-				link: "",
+				link: "/",
 			},
 		],
 		[
 			{
 				id: 1,
-				title: "JObs",
-				link: "",
+				title: "Jobs",
+				link: "/",
 			},
 			{
 				id: 2,
 				title: "Our team",
-				link: "",
+				link: "/",
 			},
 			{
 				id: 3,
 				title: "Leadership",
-				link: "",
+				link: "/",
 			},
 			{
 				id: 4,
 				title: "Privacy Policy",
-				link: "",
+				link: "/",
 			},
 		],
 		[
 			{
 				id: 1,
 				title: "Nordic Chair",
-				link: "",
+				link: "/",
 			},
 			{
 				id: 2,
 				title: "Kruzo Aero",
-				link: "",
+				link: "/",
 			},
 			{
 				id: 3,
 				title: "Ergonomic Chair",
-				link: "",
+				link: "/",
 			},
 		],
 	],

@@ -1,6 +1,9 @@
 import { footerData } from "@/lib/data";
 import Link from "next/link";
 import MailIcon from "@/public/icons/envelope-outline.svg";
+import Socialicons from "../Socialicons";
+import Button from "../Button";
+import SendIcon from "@/public/icons/send.svg";
 
 type Props = {};
 
@@ -16,19 +19,28 @@ const Footer = (props: Props) => {
 					</p>
 				</div>
 				<div>form</div>
+				<Button variant="fill" color="green" className="!rounded-xl">
+					<SendIcon className="w-6 aspect-square" />
+				</Button>
 			</section>
 			<footer className="py-20 flex flex-col gap-4">
 				<h4 className="text-green font-semibold">{footerData.heading}</h4>
 				<div className="grid lg:grid-cols-[30%_1fr] gap-8 mb-10">
-					<p className="small text-gray">{footerData.desc}</p>
-
+					<div className="flex flex-col gap-4">
+						<p className="small text-gray">{footerData.desc}</p>
+						<Socialicons />
+					</div>
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-4 gap-y-10">
 						{footerData?.footerLinks?.map((item, index) => {
 							return (
 								<div key={index} className="flex flex-col gap-4">
 									{item?.map((link) => {
 										return (
-											<Link key={link.id} href={link.link}>
+											<Link
+												key={link.id}
+												href={link.link}
+												className="hover:text-gray/70 duration-300"
+											>
 												{link.title}
 											</Link>
 										);
