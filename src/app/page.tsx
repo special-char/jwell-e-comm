@@ -22,9 +22,6 @@ export default function Home() {
       <WhyChooseUsSection />
       <TestimonialSection />
       <Banner data={homePageBanner} />
-      <Banner data={shopBannerData} />
-      <Banner data={aboutUsBanner} />
-      <Banner data={contactUsBanner} />
     </main>
   );
 }
