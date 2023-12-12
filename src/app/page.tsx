@@ -3,15 +3,11 @@ import TestimonialSection from "@/containers/TestimonialSection";
 import WhyChooseUsSection from "@/containers/WhyChooseUs";
 import Link from "next/link";
 import { homePageBanner } from "@/lib/data";
-import { shopBannerData } from "@/lib/data";
-import { aboutUsBanner } from "@/lib/data";
-import { contactUsBanner } from "@/lib/data";
-import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-2">
-      <Header />
       <h2>Normal Routes</h2>
       <Link href="/products">shop or all products</Link>
       <Link href="/products/p001">product/p001</Link>
@@ -24,6 +20,7 @@ export default function Home() {
       <WhyChooseUsSection />
       <TestimonialSection />
       <Banner data={homePageBanner} />
+      <Footer />
     </main>
   );
 }

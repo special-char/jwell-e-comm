@@ -89,7 +89,7 @@
 
 	button,
 	a {
-		@apply text-btn font-semibold;
+		@apply text-btn;
 	}
 	/* ------------ typography ends ------------ */
 }
