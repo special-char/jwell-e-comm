@@ -28,7 +28,7 @@ export const navbarData = {
 
 //-------------------------------HOME PAGE ------------------------------//
 export const homePageBanner = {
-	bgImage: "",
+	bgImage: "/images/bannerImage.png",
 	heading: "Less is more when it comes to skin care.",
 	desc: "Beautifull you",
 	btn1: "Shop Now",
@@ -249,7 +249,7 @@ export const footer = {
 //-----------------------------SHOP SECTION---------------------------------------------//
 
 export const shopBannerData = {
-	bgimage: "",
+	bgImage: "",
 	heading: "Shop",
 };
 
@@ -339,12 +339,11 @@ export const products = [
 //-------------------------------------ABOUT US -------------------------------------------//
 
 export const aboutUsBanner = {
-	bannerBgImage: "",
-	bannerHeading: "About Us",
-	bannerdescription:
-		"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-	bannerbtn1: "Shop Now",
-	bannerbtn2: "Explore",
+	bgImage: "/images/bannerImage.png",
+	heading: "About Us",
+	desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+	btn1: "Shop Now",
+	btn2: "Explore",
 };
 
 export const ourTeamData = {
@@ -402,12 +401,11 @@ export const serviceBanner = {
 //-----------------------------CONTACT-US--------------------------//
 
 export const contactUsBanner = {
-	bannerBgImage: "",
-	bannerHeading: "Contact Us",
-	bannerdescription:
-		"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-	bannerbtn1: "Shop Now",
-	bannerbtn2: "Explore",
+	bgImage: "/images/bannerImage.png",
+	heading: "Contact Us",
+	desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+	btn1: "Shop Now",
+	btn2: "Explore",
 };
 
 export const contactdetail = [
