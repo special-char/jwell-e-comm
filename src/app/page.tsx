@@ -1,4 +1,5 @@
 import Banner from "@/components/common/Banner";
+import TestimonialSection from "@/containers/TestimonialSection";
 import Link from "next/link";
 import { homePageBanner } from "@/lib/data";
 import { shopBannerData } from "@/lib/data";
@@ -8,10 +9,6 @@ import { contactUsBanner } from "@/lib/data";
 export default function Home() {
   return (
     <main className="flex flex-col gap-2">
-      <Banner data={homePageBanner} />
-      <Banner data={shopBannerData} />
-      <Banner data={aboutUsBanner} />
-      <Banner data={contactUsBanner} />
       <h2>Normal Routes</h2>
       <Link href="/products">shop or all products</Link>
       <Link href="/products/p001">product/p001</Link>
@@ -21,6 +18,11 @@ export default function Home() {
       <Link href={`/login`}>login</Link>
       <Link href={`/cart`}>Open cart</Link>
       <Link href="/products/p001">product/p001</Link>
+      <TestimonialSection />
+      <Banner data={homePageBanner} />
+      <Banner data={shopBannerData} />
+      <Banner data={aboutUsBanner} />
+      <Banner data={contactUsBanner} />
     </main>
   );
 }
