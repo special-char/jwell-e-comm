@@ -5,28 +5,28 @@ import Linkedin from "@/public/icons/linkedin.svg";
 
 //----------------------------NAVBAR----------------------------------//
 export const navbarData = {
-	heading1: "furni",
+	heading1: "Bea You",
 	heading2: ".",
 	navLinks: [
 		{
 			id: 1,
 			title: "Home",
-			url: "/",
+			url: "",
 		},
 		{
 			id: 2,
 			title: "Shop",
-			url: "/products",
+			url: "",
 		},
 		{
 			id: 3,
 			title: "About us",
-			url: "/about-us",
+			url: "",
 		},
 		{
 			id: 4,
 			title: "Contact us",
-			url: "/contact-us",
+			url: "",
 		},
 	],
 };
