@@ -11,7 +11,7 @@
     }
   }
 
-  & > .navlinks {
+  & .navlinks {
     @apply max-md:hidden flex gap-16;
     & > .links {
       @apply flex items-center gap-12;
