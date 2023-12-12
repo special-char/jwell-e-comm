@@ -6,87 +6,76 @@ export const navbarData = {
 		{
 			id: 1,
 			title: "Home",
-			url: "",
+			url: "/",
 		},
 		{
 			id: 2,
 			title: "Shop",
-			url: "",
+			url: "/products",
 		},
 		{
 			id: 3,
 			title: "About us",
-			url: "Blog",
+			url: "/about-us",
 		},
 		{
 			id: 4,
-			title: "Services",
-			url: "",
-		},
-		{
-			id: 5,
 			title: "Contact us",
-			url: "",
+			url: "/contact-us",
 		},
 	],
-	profileicon: "",
-	carticon: "",
 };
 
 //-------------------------------HOME PAGE ------------------------------//
 export const homePageBanner = {
-	bannerBgImage: "",
-	bannerHeading: "Modern Interior Design Studio",
-	bannerdescription:
-		"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-	bannerbtn1: "Shop Now",
-	bannerbtn2: "Explore",
+	bgImage: "",
+	heading: "Less is more when it comes to skin care.",
+	desc: "Beautifull you",
+	btn1: "Shop Now",
+	btn2: "Explore",
 };
 
-export const topproduct = {
-	heading1: "Crafted with excellent material.",
-	desription:
-		"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+export const topProduct = {
+	heading: "Crafted with excellent material.",
+	desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
 	btn: "Explore",
 };
 
 export const whyChooseUs = {
 	image: "",
-	heading1: "Why Choose Us",
-	desription:
-		"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+	heading: "Why Choose Us",
+	desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+	services: [
+		{
+			id: 1,
+			icon: "",
+			heading: "Fast & Free Shipping",
+			detail:
+				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
+		},
+		{
+			id: 2,
+			icon: "",
+			heading: "Easy to Shop",
+			detail:
+				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
+		},
+		{
+			id: 3,
+			icon: "",
+			heading: "24/7 support",
+			detail:
+				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
+		},
+		{
+			id: 3,
+			icon: "",
+			heading: "Hassle free return",
+			detail:
+				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
+		},
+	],
 };
-
-export const services = [
-	{
-		id: 1,
-		icon: "",
-		heading: "Fast & Free Shipping",
-		detail:
-			"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
-	},
-	{
-		id: 2,
-		icon: "",
-		heading: "Easy to Shop",
-		detail:
-			"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
-	},
-	{
-		id: 3,
-		icon: "",
-		heading: "24/7 support",
-		detail:
-			"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
-	},
-	{
-		id: 3,
-		icon: "",
-		heading: "Hassle free return",
-		detail:
-			"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
-	},
-];
 
 export const help = {
 	image1: "",
@@ -123,8 +112,6 @@ export const help = {
 
 export const testimonialdata = {
 	heading: "Testimonials",
-	leftScrollBtn: "",
-	RightScrollBtn: "",
 	testimonials: [
 		{
 			id: 1,
@@ -265,6 +252,7 @@ export const shopBannerData = {
 	bgimage: "",
 	heading: "Shop",
 };
+
 export const products = [
 	{
 		id: 1,
@@ -439,6 +427,7 @@ export const contactdetail = [
 		info: "+1 294 3925 3939",
 	},
 ];
+
 export const contactform = {
 	name1: "First name",
 	name1: "Last name",
@@ -502,12 +491,14 @@ export const cartPage = {
 	btn1: "Update Cart",
 	btn2: "Continue shopping",
 };
+
 export const coupon = {
 	coupontext: "Coupon",
 	description: "Lorem a src jkuyyhur",
 	placeholdertext: "Enter the coupon code",
 	btn: "Apply Code",
 };
+
 export const cartTotal = {
 	title: "Cart Total ",
 	subtotal: "subtotal",
