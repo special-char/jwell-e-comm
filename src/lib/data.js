@@ -142,17 +142,12 @@ export const testimonialData = {
 
 //-------------------------------FOOTER-------------------------------//
 
-export const footer = {
-	productImage: "Subscribe to Newsletter",
-	icon: "",
-	heading: "",
-	placeholder1: "Enter your name",
-	placeholder2: "Enter your email",
-	btnIcon: "",
-	heading1: "Furni",
-	heading2: ".",
-	description:
-		"Donec facili Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant",
+export const footerData = {
+	newsletter: {
+		heading: "Subscribe to Newsletter",
+	},
+	heading: "Furni.",
+	desc: "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant",
 	socialmedia: [
 		{
 			id: 1,
@@ -175,74 +170,76 @@ export const footer = {
 			icon: "",
 		},
 	],
-	footerlink1: [
-		{
-			id: 1,
-			title: "About us",
-			link: "",
-		},
-		{
-			id: 2,
-			title: "Service",
-			link: "",
-		},
+	footerLinks: [
+		[
+			{
+				id: 1,
+				title: "About us",
+				link: "",
+			},
+			{
+				id: 2,
+				title: "Service",
+				link: "",
+			},
 
-		{
-			id: 3,
-			title: "Contact us",
-			link: "",
-		},
-	],
-	footerlink2: [
-		{
-			id: 1,
-			title: "Support",
-			link: "",
-		},
-		{
-			id: 2,
-			title: "Knowledge base",
-			link: "",
-		},
-	],
-	footerlink3: [
-		{
-			id: 1,
-			title: "JObs",
-			link: "",
-		},
-		{
-			id: 2,
-			title: "Our team",
-			link: "",
-		},
-		{
-			id: 3,
-			title: "Leadership",
-			link: "",
-		},
-		{
-			id: 4,
-			title: "Privacy Policy",
-			link: "",
-		},
-	],
-	footerlink4: [
-		{
-			id: 1,
-			title: "Nordic Chair",
-			link: "",
-		},
-		{
-			id: 2,
-			title: "Kruzo Aero",
-			link: "",
-		},
-		{
-			id: 3,
-			title: "Ergonomic Chair",
-			link: "",
-		},
+			{
+				id: 3,
+				title: "Contact us",
+				link: "",
+			},
+		],
+		[
+			{
+				id: 1,
+				title: "Support",
+				link: "",
+			},
+			{
+				id: 2,
+				title: "Knowledge base",
+				link: "",
+			},
+		],
+		[
+			{
+				id: 1,
+				title: "JObs",
+				link: "",
+			},
+			{
+				id: 2,
+				title: "Our team",
+				link: "",
+			},
+			{
+				id: 3,
+				title: "Leadership",
+				link: "",
+			},
+			{
+				id: 4,
+				title: "Privacy Policy",
+				link: "",
+			},
+		],
+		[
+			{
+				id: 1,
+				title: "Nordic Chair",
+				link: "",
+			},
+			{
+				id: 2,
+				title: "Kruzo Aero",
+				link: "",
+			},
+			{
+				id: 3,
+				title: "Ergonomic Chair",
+				link: "",
+			},
+		],
 	],
 };
 

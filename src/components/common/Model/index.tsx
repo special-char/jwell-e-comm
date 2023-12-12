@@ -1,7 +1,7 @@
 "use client";
 import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment, useCallback } from "react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import XMarkIcon from "@/public/icons/cencel.svg";
 import { useRouter } from "next/navigation";
 
 type Props = {
