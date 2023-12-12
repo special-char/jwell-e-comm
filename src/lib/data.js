@@ -42,34 +42,34 @@ export const topProduct = {
 };
 
 export const whyChooseUs = {
-	image: "",
+	image: "/images/whyChooseUsImg.jpg",
 	heading: "Why Choose Us",
 	desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
 	services: [
 		{
 			id: 1,
-			icon: "",
+			icon: "/icons/shippingtruck.svg",
 			heading: "Fast & Free Shipping",
 			detail:
 				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
 		},
 		{
 			id: 2,
-			icon: "",
+			icon: "/icons/bag.svg",
 			heading: "Easy to Shop",
 			detail:
 				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
 		},
 		{
 			id: 3,
-			icon: "",
+			icon: "/icons/support.svg",
 			heading: "24/7 support",
 			detail:
 				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
 		},
 		{
-			id: 3,
-			icon: "",
+			id: 4,
+			icon: "/icons/return.svg",
 			heading: "Hassle free return",
 			detail:
 				"Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",

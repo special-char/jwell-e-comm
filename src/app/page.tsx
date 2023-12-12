@@ -1,4 +1,4 @@
-import WhyChooseUs from "@/containers/WhyChooseUs";
+import WhyChoose from "@/containers/WhyChooseUs";
 import Link from "next/link";
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       {/* <Link href={`/login`}>Click me</Link>
       <Link href={`/cart`}>Open cart</Link> */}
-      <WhyChooseUs />
+      <WhyChoose />
     </main>
   );
 }
