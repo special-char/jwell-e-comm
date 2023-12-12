@@ -110,14 +110,14 @@ export const help = {
 	btn: "",
 };
 
-export const testimonialdata = {
+export const testimonialData = {
 	heading: "Testimonials",
-	testimonials: [
+	testimonialCards: [
 		{
 			id: 1,
 			description:
 				'"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque."',
-			image: "",
+			image: "/images/person-1.png",
 			name: "Maria Jones",
 			position: "CEO, Co-Founder, XYZ Inc.",
 		},
@@ -125,7 +125,7 @@ export const testimonialdata = {
 			id: 2,
 			description:
 				'"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque."',
-			image: "",
+			image: "/images/person-1.png",
 			name: "Maria Jones",
 			position: "CEO, Co-Founder, XYZ Inc.",
 		},
@@ -133,7 +133,7 @@ export const testimonialdata = {
 			id: 3,
 			description:
 				'"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque."',
-			image: "",
+			image: "/images/person-1.png",
 			name: "Maria Jones",
 			position: "CEO, Co-Founder, XYZ Inc.",
 		},

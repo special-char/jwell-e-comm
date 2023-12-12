@@ -4,19 +4,9 @@ import style from "./whychooseus.module.css";
 import { whyChooseUs } from "@/lib/data";
 import ServiceCard from "@/components/common/ServiceCard";
 
-type Props = {
-  image: string;
-  heading: string;
-  desc: string;
-  services: Array<{
-    id: number;
-    icon: string;
-    heading: string;
-    detail: string;
-  }>;
-};
+type Props = {};
 
-const WhyChoose = (props: Props) => {
+const WhyChooseUsSection = (props: Props) => {
   return (
     <section className="pt-20">
       <div className={style.container}>
@@ -48,4 +38,4 @@ const WhyChoose = (props: Props) => {
   );
 };
 
-export default WhyChoose;
+export default WhyChooseUsSection;
