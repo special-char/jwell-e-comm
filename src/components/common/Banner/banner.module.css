@@ -1,0 +1,36 @@
+.gridSection {
+  @apply grid md:grid-cols-[40%_1fr] bg-green grid-cols-1 items-center max-md:justify-items-center select-none;
+  & > .content {
+    @apply flex flex-col gap-4;
+
+    & > .heading {
+      @apply flex flex-col;
+
+      & > .title {
+        @apply text-white  font-bold;
+      }
+      & > .desc {
+        @apply text-white text-opacity-30;
+      }
+    }
+    & > .buttons {
+      @apply flex gap-4;
+      & > .btn1 {
+        @apply bg-yellow px-6 py-2 rounded-full;
+      }
+      & > .btn2 {
+        @apply bg-transparent border-2 border-white border-opacity-30 hover:border-opacity-100 text-white rounded-full px-6 py-2;
+      }
+    }
+  }
+  & > .bgImage {
+    @apply relative w-full aspect-[16/9];
+
+    &::after {
+      content: url("/icons/dots-light.svg");
+      position: absolute;
+
+      @apply aspect-square md:w-[200px] w-[65px] top-5 right-5;
+    }
+  }
+}
