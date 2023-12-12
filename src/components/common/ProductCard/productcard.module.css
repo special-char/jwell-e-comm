@@ -1,0 +1,18 @@
+.main {
+  @apply relative;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: green;
+  opacity: 10%;
+  border-radius: 10px;
+}
+.main:hover::before {
+  height: 60%;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
