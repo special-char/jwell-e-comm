@@ -36,9 +36,9 @@
   }
 
   &--round {
-    @apply w-14 aspect-square bg-green bg-opacity-20 rounded-full text-green hover:bg-opacity-100 hover:text-white;
+    @apply p-3 aspect-square bg-green bg-opacity-20 rounded-full text-green hover:bg-opacity-100 hover:text-white;
   }
   &--icon {
-    @apply w-14 aspect-square;
+    @apply p-3 aspect-square;
   }
 }

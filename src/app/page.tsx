@@ -6,10 +6,12 @@ import { homePageBanner } from "@/lib/data";
 import { shopBannerData } from "@/lib/data";
 import { aboutUsBanner } from "@/lib/data";
 import { contactUsBanner } from "@/lib/data";
+import Socialicons from "@/components/common/Socialicons";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-2">
+      <Socialicons />
       <h2>Normal Routes</h2>
       <Link href="/products">shop or all products</Link>
       <Link href="/products/p001">product/p001</Link>
