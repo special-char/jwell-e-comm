@@ -12,33 +12,33 @@ export const navbarData = {
     {
       id: 1,
       title: "Home",
-      url: "",
+      url: "/",
     },
     {
       id: 2,
       title: "Shop",
-      url: "",
+      url: "/products",
     },
     {
       id: 3,
       title: "About us",
-      url: "",
+      url: "/about-us",
     },
     {
       id: 4,
       title: "Contact us",
-      url: "",
+      url: "/contact-us",
     },
   ],
 };
 
 //-------------------------------HOME PAGE ------------------------------//
 export const homePageBanner = {
-  bgImage: "/images/bannerImage.png",
+  backgroundBannerImage: "/images/bannerImage.png",
   heading: "Less is more when it comes to skin care.",
-  desc: "Beautifull you",
-  btn1: "Shop Now",
-  btn2: "Explore",
+  description: "Beautifull you",
+  actionBtn1: "Shop Now",
+  actionBtn2: "Explore",
 };
 
 export const topProduct = {
