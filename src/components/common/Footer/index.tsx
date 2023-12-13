@@ -4,12 +4,17 @@ import MailIcon from "@/public/icons/envelope-outline.svg";
 import Button from "@/components/common/Button";
 import SocialIcons from "@/components/common/SocialIcons";
 import SendIcon from "@/public/icons/send.svg";
+import Input from "../Input";
+import Image from "next/image";
 
 type Props = {};
 
 const Footer = (props: Props) => {
 	return (
-		<>
+		<div className="bg-white relative max-md:mt-20 mt-40 pt-20">
+			<div className="absolute right-0 top-0 min-w-[200px] w-[30%] max-w-[350px] aspect-square -translate-y-[40%] -translate-x-[10%]">
+				<Image fill src="/images/footerImage.png" alt="footer image" />
+			</div>
 			{/* newsletter */}
 			<section className="pb-0">
 				<div className="flex gap-2 items-center">
@@ -18,10 +23,18 @@ const Footer = (props: Props) => {
 						{footerData.newsLetter.heading}
 					</p>
 				</div>
-				<div>form</div>
-				<Button variant="fill" color="green" className="!rounded-xl">
-					<SendIcon className="w-6 aspect-square" />
-				</Button>
+				<form className="flex gap-4 items-center">
+					<Input name="name" placeholder="Enter your name" />
+					<Input name="email" placeholder="Enter your email" type="email" />
+					<Button
+						variant="fill"
+						color="green"
+						className="!rounded-xl"
+						type="submit"
+					>
+						<SendIcon className="w-6 aspect-square" />
+					</Button>
+				</form>
 			</section>
 			<footer className="py-20 flex flex-col gap-4">
 				<h4 className="text-green font-semibold">{footerData.heading}</h4>
@@ -61,7 +74,7 @@ const Footer = (props: Props) => {
 					</div>
 				</div>
 			</footer>
-		</>
+		</div>
 	);
 };
 
