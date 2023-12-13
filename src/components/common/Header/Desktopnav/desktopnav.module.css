@@ -1,43 +1,37 @@
 .deskNav {
-  @apply flex items-center justify-between h-20;
+	@apply max-md:hidden flex items-center justify-between h-20 w-full;
 
-  & > .logoWrapper {
-    @apply flex items-center;
-    & .heading1 {
-      @apply text-white text-subtitle2 m-0;
-    }
-    & .heading2 {
-      @apply text-white opacity-40 text-subtitle2 m-0;
-    }
-  }
+	& > .logoWrapper {
+		@apply flex items-center;
+		& .heading1 {
+			@apply text-white text-subtitle2 m-0;
+		}
+		& .heading2 {
+			@apply text-white opacity-40 text-subtitle2 m-0;
+		}
+	}
 
-  & .navLinks {
-    @apply max-md:hidden flex gap-16;
-    & > .links {
-      @apply flex items-center gap-12;
-      & > .link {
-        @apply text-white opacity-50 hover:opacity-100 focus:opacity-100 relative pb-1;
-      }
-    }
-    & > .icons {
-      @apply flex gap-2 max-w-full;
-    }
-  }
+	& .navlinks {
+		@apply max-md:hidden flex gap-16;
+		& > .links {
+			@apply flex items-center gap-12;
+			& > .link {
+				@apply text-white opacity-50 hover:opacity-100 focus:opacity-100 relative pb-1 duration-300;
+			}
+		}
+		& > .icons {
+			@apply flex gap-2;
+		}
+	}
 }
 
 .link::before {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: 0;
-  background-color: yellow;
+	content: "";
+	@apply absolute h-[3px] w-0 left-0 bottom-0 bg-yellow duration-300;
 }
 .link:hover::before {
-  width: 100%;
-  transition: 0.2s ease-in-out;
+	width: 100%;
 }
 .link:focus::before {
-  width: 100%;
+	width: 100%;
 }
