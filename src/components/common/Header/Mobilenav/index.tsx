@@ -57,10 +57,10 @@ function Mobilenav({ data, open, setopen }: Props) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className={style.dialogpanel}>
+              <Dialog.Panel className={`no-scrollbar ${style.dialogpanel}`}>
                 <div className={style.container}>
                   <div className={style.menuheader}>
-                    <div className="flex">
+                    <div className="flex items-center">
                       <h1 className={style.heading1}>{data.heading1}</h1>
                       <h1 className={style.heading2}>{data.heading2}</h1>
                     </div>
