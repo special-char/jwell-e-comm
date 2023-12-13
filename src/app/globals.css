@@ -16,7 +16,7 @@
     --color-yellow: 249 191 41;
     --color-black: 47 47 47;
     --color-gray: 106 106 106;
-    --color-white: 239 242 241;
+    --color-white: 255 255 255;
     --swiper-theme-color: rgba(59 93 80);
   }
 
@@ -93,6 +93,10 @@
     @apply text-btn;
   }
   /* ------------ typography ends ------------ */
+
+  input {
+    @apply px-4 py-3 rounded-xl bg-white outline-none w-full placeholder:text-black border border-gray/30 focus:border-green;
+  }
 }
 
 @layer utilities {

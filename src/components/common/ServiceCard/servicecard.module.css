@@ -1,8 +1,8 @@
 .service {
   @apply flex flex-col gap-5;
-  & > .detail {
+  & > .serviceDetail {
     @apply flex flex-col gap-1;
-    & > .description {
+    & > .serviceDescription {
       @apply text-caption1 text-gray;
     }
   }

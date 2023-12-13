@@ -1,37 +1,43 @@
 .deskNav {
-	@apply max-md:hidden flex items-center justify-between h-20 w-full;
+  @apply max-md:hidden flex items-center justify-between h-20 w-full;
 
-	& > .logoWrapper {
-		@apply flex items-center;
-		& .heading1 {
-			@apply text-white text-subtitle2 m-0;
-		}
-		& .heading2 {
-			@apply text-white opacity-40 text-subtitle2 m-0;
-		}
-	}
+  & > .logoWrapper {
+    @apply flex items-center;
+    & .heading1 {
+      @apply text-white text-subtitle2 m-0;
+    }
+    & .heading2 {
+      @apply text-white opacity-40 text-subtitle2 m-0;
+    }
+  }
 
-	& .navlinks {
-		@apply max-md:hidden flex gap-16;
-		& > .links {
-			@apply flex items-center gap-12;
-			& > .link {
-				@apply text-white opacity-50 hover:opacity-100 focus:opacity-100 relative pb-1 duration-300;
-			}
-		}
-		& > .icons {
-			@apply flex gap-2;
-		}
-	}
+  & .contentWrapper {
+    @apply max-md:hidden flex gap-16;
+    & > .navLinks {
+      @apply flex items-center gap-12;
+      & > .link {
+        @apply relative text-white opacity-50 hover:opacity-100 w-max pb-1;
+
+        &::before {
+          content: "";
+          @apply absolute h-[3px] w-0 left-0 bottom-0 bg-yellow duration-300;
+        }
+
+        &:hover::before {
+          @apply w-full;
+        }
+      }
+    }
+    & > .icons {
+      @apply flex gap-4 px-2;
+    }
+  }
 }
 
-.link::before {
-	content: "";
-	@apply absolute h-[3px] w-0 left-0 bottom-0 bg-yellow duration-300;
-}
-.link:hover::before {
-	width: 100%;
-}
-.link:focus::before {
-	width: 100%;
+.active {
+  @apply !opacity-100;
+
+  &::before {
+    @apply !w-full;
+  }
 }
