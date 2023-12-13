@@ -34,7 +34,7 @@ export const navbarData = {
 
 //-------------------------------HOME PAGE ------------------------------//
 export const homePageBanner = {
-  backgroundBannerImage: "/images/bannerImage.png",
+  backgroundBannerproductImage: "/images/bannerImage.png",
   heading: "Less is more when it comes to skin care.",
   description: "Beautifull you",
   actionBtn1: "Shop Now",
@@ -43,78 +43,80 @@ export const homePageBanner = {
 
 export const topProduct = {
   heading: "Crafted with excellent material.",
-  desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-  btn: "Explore",
+  description:
+    "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+  actionBtn1: "Explore",
 };
 
 export const whyChooseUs = {
   image: "/images/whyChooseUsImg.jpg",
   heading: "Why Choose Us",
-  desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+  description:
+    "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
   services: [
     {
       id: 1,
       icon: "/icons/shippingtruck.svg",
       heading: "Fast & Free Shipping",
-      detail:
+      serviceDescription:
         "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
     },
     {
       id: 2,
       icon: "/icons/bag.svg",
       heading: "Easy to Shop",
-      detail:
+      serviceDescription:
         "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
     },
     {
       id: 3,
       icon: "/icons/support.svg",
       heading: "24/7 support",
-      detail:
+      serviceDescription:
         "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
     },
     {
       id: 4,
       icon: "/icons/return.svg",
       heading: "Hassle free return",
-      detail:
+      serviceDescription:
         "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.",
     },
   ],
 };
 
-export const help = {
-  image1: "",
-  image2: "",
-  image3: "",
-  heading1: "We Help You Make Modern Interior Design",
-  description:
-    "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada",
-  icon: "",
-  points: [
-    {
-      id: 1,
+// export const help = {
+//   image1: "",
+//   image2: "",
+//   image3: "",
+//   heading: "We Help You Make Modern Interior Design",
+//   description:
+//     "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada",
+//   icon: "",
+//   points: [
+//     {
+//       id: 1,
 
-      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-    },
-    {
-      id: 2,
+//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+//     },
+//     {
+//       id: 2,
 
-      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-    },
-    {
-      id: 3,
+//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+//     },
+//     {
+//       id: 3,
 
-      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-    },
-    {
-      id: 4,
+//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+//     },
+//     {
+//       id: 4,
 
-      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-    },
-  ],
-  btn: "",
-};
+//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+//     },
+//   ],
+//   actionBtn1: "",
+// };
 
 export const testimonialData = {
   heading: "Testimonials",
@@ -251,259 +253,264 @@ export const footerData = {
 
 //-----------------------------SHOP SECTION---------------------------------------------//
 
-export const shopBannerData = {
-  bgImage: "",
+export const shopPageBanner = {
+  backgroundBannerImage: "",
   heading: "Shop",
 };
 
 export const products = [
   {
     id: 1,
-    imgUrl: "/images/product1.png",
-    title: "Nordic Chair",
-    price: "$50.00",
-    btn: Plus,
-    desription:
+    productUrl: "/images/product1.png",
+    productName: "Nordic Chair",
+    productPrice: "$50.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 2,
-    imgUrl: "/images/product2.png",
-    title: "Kurzo Aero Chair",
-    price: "$78.00",
-    btn: Plus,
-    desription:
+    productUrl: "/images/product2.png",
+    productName: "Kurzo Aero Chair",
+    productPrice: "$78.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 3,
-    imgUrl: "/images/product3.png",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "/images/product3.png",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 4,
-    imgUrl: "",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 5,
-    imgUrl: "",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 6,
-    imgUrl: "",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 7,
-    imgUrl: "",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 8,
-    imgUrl: "",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 9,
-    imgUrl: "",
-    title: "Ergonomic Chair",
-    price: "$43.00",
-    btn: Plus,
-    desription:
+    productUrl: "",
+    productName: "Ergonomic Chair",
+    productPrice: "$43.00",
+    addBtn: Plus,
+    productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
 ];
 //-------------------------------------ABOUT US -------------------------------------------//
 
-export const aboutUsBanner = {
-  bgImage: "/images/bannerImage.png",
+export const aboutUsPageBanner = {
+  backgroundBannerImage: "/images/bannerImage.png",
   heading: "About Us",
-  desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-  btn1: "Shop Now",
-  btn2: "Explore",
+  description:
+    "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+  actionBtn1: "Shop Now",
+  actionBtn2: "Explore",
 };
 
-export const ourTeamData = {
-  title: "Our Team",
-  teamMember: [
-    {
-      id: 1,
-      image: "",
-      name: "Lawson Arnold",
-      designation: "CEO, Founder, Atty.",
-      description:
-        " in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-      btnText: "Learn More",
-    },
-    {
-      id: 2,
-      image: "",
-      name: "Jeremy Walker",
-      designation: "CEO, Founder, Atty.",
-      description:
-        "in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-      btnText: "Learn More",
-    },
-    {
-      id: 3,
-      image: "",
-      name: "Patrik White",
-      designation: "CEO, Founder, Atty.",
-      description:
-        "in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-      btnText: "Learn More",
-    },
-    {
-      id: 4,
-      image: "",
-      name: "Kathryn Ryan",
-      designation: "CEO, Founder, Atty.",
-      description:
-        "in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-      btnText: "Learn More",
-    },
-  ],
-};
+// export const ourTeamData = {
+//   title: "Our Team",
+//   teamMember: [
+//     {
+//       id: 1,
+//       image: "",
+//       name: "Lawson Arnold",
+//       designation: "CEO, Founder, Atty.",
+//       description:
+//         " in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+//       btnText: "Learn More",
+//     },
+//     {
+//       id: 2,
+//       image: "",
+//       name: "Jeremy Walker",
+//       designation: "CEO, Founder, Atty.",
+//       description:
+//         "in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+//       btnText: "Learn More",
+//     },
+//     {
+//       id: 3,
+//       image: "",
+//       name: "Patrik White",
+//       designation: "CEO, Founder, Atty.",
+//       description:
+//         "in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+//       btnText: "Learn More",
+//     },
+//     {
+//       id: 4,
+//       image: "",
+//       name: "Kathryn Ryan",
+//       designation: "CEO, Founder, Atty.",
+//       description:
+//         "in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+//       btnText: "Learn More",
+//     },
+//   ],
+// };
 //----------------------------SERVICES------------------------//
 
-export const serviceBanner = {
-  bannerBgImage: "",
-  bannerHeading: "About Us",
-  bannerdescription:
+export const servicePageBanner = {
+  backgroundBannerImage: "",
+  heading: "About Us",
+  description:
     "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-  bannerbtn1: "Shop Now",
-  bannerbtn2: "Explore",
+  actionBtn1: "Shop Now",
+  actionBtn2: "Explore",
 };
 
 //-----------------------------CONTACT-US--------------------------//
 
-export const contactUsBanner = {
-  bgImage: "/images/bannerImage.png",
+export const contactUsPageBanner = {
+  backgroundBannerImage: "/images/bannerImage.png",
   heading: "Contact Us",
-  desc: "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-  btn1: "Shop Now",
-  btn2: "Explore",
+  description:
+    "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
+  actionBtn1: "Shop Now",
+  actionBtn2: "Explore",
 };
 
-export const contactdetail = [
+export const contactDetails = [
   {
     id: 1,
+    name: "Address",
     icon: "",
-    detail: "43 Raymouth Rd. Baltemoer, London 3910",
+    description: "43 Raymouth Rd. Baltemoer, London 3910",
   },
   {
     id: 2,
+    name: "Email",
     icon: "",
-    info: "info@yourdomain.com",
+    description: "info@yourdomain.com",
   },
   {
     id: 3,
+    name: "Phone-number",
     icon: "",
-    info: "+1 294 3925 3939",
+    description: "+1 294 3925 3939",
   },
 ];
 
-export const contactform = {
-  name1: "First name",
-  name1: "Last name",
-  email: "Email Address",
-  message: "Message",
-};
+// export const contactForm = {
+//   name1: "First name",
+//   name1: "Last name",
+//   email: "Email Address",
+//   message: "Message",
+// };
 
 //-----------------------------CART-------------------------------------//
-export const cartBanner = {
-  bgimage: "",
+
+export const cartPageBanner = {
+  backgroundBannerImage: "",
   heading: "Cart",
 };
 
 export const cartPage = {
-  cartDetail: [
+  cartHeaderList: [
     {
       id: 1,
-      title: "Image",
+      name: "Image",
     },
     {
       id: 2,
-      title: "Product Name",
+      name: "Product",
     },
     {
       id: 3,
-      title: "Price",
+      name: "Price",
     },
     {
       id: 4,
-      title: "Quantity",
+      name: "Quantity",
     },
     {
       id: 5,
-      title: "Total",
+      name: "Total",
     },
     {
       id: 6,
-      title: "Remove",
+      name: "Remove",
     },
   ],
-  cartProduct: [
+  cartProductList: [
     {
       id: 1,
-      image: "",
+      productImage: "",
       productName: "Chair",
-      amount: "$50.00",
+      productPrice: "$50.00",
     },
     {
       id: 2,
-      image: "",
+      productImage: "",
       productName: "Chair",
-      amount: "$50.00",
+      productPrice: "$50.00",
     },
     {
       id: 3,
-      image: "",
+      productImage: "",
       productName: "Chair",
-      amount: "$50.00",
+      productPrice: "$50.00",
     },
   ],
-  btn1: "Update Cart",
-  btn2: "Continue shopping",
+  cartActionBtn1: "Update Cart",
+  cartActionBtn2: "Continue shopping",
 };
 
 export const coupon = {
-  coupontext: "Coupon",
+  heading: "Coupon",
   description: "Lorem a src jkuyyhur",
-  placeholdertext: "Enter the coupon code",
-  btn: "Apply Code",
+  CouponActionBtn: "Apply Code",
 };
 
 export const cartTotal = {
-  title: "Cart Total ",
-  subtotal: "subtotal",
-  total: "total",
-  btn: "Proceed To Checkout",
+  heading: "Cart Totals ",
+  subtotal: "Subtotal",
+  total: "Total",
+  checkoutActionBtn: "Proceed To Checkout",
 };
 //-----------------------------CHECKOUT FORM--------------------------//
