@@ -24,7 +24,6 @@ export type ProductCardType = {
     productImage: string;
     productName: string;
     productPrice: string;
-    addBtn: string;
     productDescription: string;
   };
 };
