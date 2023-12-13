@@ -5,6 +5,7 @@ import Header from "@/components/common/Header";
 import HomeBanner from "@/containers/HomeBanner";
 import ProductCard from "@/components/common/ProductCard";
 import { products } from "@/lib/data";
+
 export default function Home() {
 	return (
 		<main>
