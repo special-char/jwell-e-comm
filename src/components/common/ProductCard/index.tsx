@@ -7,7 +7,7 @@ import Plus from "@/public/icons/plus.svg";
 
 const ProductCard = ({ data }: ProductCardType) => {
   return (
-    <div key={data.id} className={Styles.main}>
+    <div className={Styles.main}>
       <div className={Styles.productWrapper}>
         <div className={Styles.productImage}>
           <Image
