@@ -1,24 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import { whyChooseUs } from "@/lib/data";
+import { ServiceCardType } from "@/utils/types";
 import style from "./servicecard.module.css";
 
-type Props = {
-  data: {
-    id: number;
-    icon: string;
-    heading: string;
-    detail: string;
-  };
-};
-
-const ServiceCard = ({ data }: Props) => {
+const ServiceCard = ({ data }: ServiceCardType) => {
   return (
     <div className={style.service}>
       <Image src={data.icon} alt={data.heading} height={30} width={30} />
-      <div className={style.detail}>
+      <div className={style.serviceDetail}>
         <p>{data.heading}</p>
-        <p className={style.description}>{data.detail}</p>
+        <p className={style.serviceDescription}>{data.serviceDescription}</p>
       </div>
     </div>
   );

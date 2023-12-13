@@ -24,7 +24,14 @@ export type ProductCardType = {
     productImage: string;
     productName: string;
     productPrice: string;
-    addBtn: string;
     productDescription: string;
+  };
+};
+export type ServiceCardType = {
+  data: {
+    id: number;
+    icon: string;
+    heading: string;
+    serviceDescription: string;
   };
 };

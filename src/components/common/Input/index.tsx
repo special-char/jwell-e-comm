@@ -18,7 +18,7 @@ const Input = ({
   ...props
 }: Props) => {
   return (
-    <div className={style.input_group}>
+    <div className={style.inputGroup}>
       {label && (
         <label
           htmlFor={name}
@@ -29,7 +29,7 @@ const Input = ({
           {label}
         </label>
       )}
-      <span className={clsx(style.input_wrapper)}>
+      <span className={clsx(style.inputWrapper)}>
         <input
           className={clsx(style.input, "peer/input", {
             [style[`input--${color}`]]: !!color,
