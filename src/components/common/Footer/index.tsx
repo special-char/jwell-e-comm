@@ -1,9 +1,9 @@
 import { footerData } from "@/lib/data";
 import Link from "next/link";
 import MailIcon from "@/public/icons/envelope-outline.svg";
-import Button from "../Button";
+import Button from "@/components/common/Button";
+import SocialIcons from "@/components/common/SocialIcons";
 import SendIcon from "@/public/icons/send.svg";
-import SocialIcons from "../SocialIcons";
 
 type Props = {};
 
