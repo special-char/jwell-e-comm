@@ -5,13 +5,13 @@ import Header from "@/components/common/Header";
 import HomeBanner from "@/containers/HomeBanner";
 
 export default function Home() {
-	return (
-		<main>
-			<Header />́
-			<HomeBanner />
-			<WhyChooseUsSection />
-			<TestimonialSection />
-			<Footer />
-		</main>
-	);
+  return (
+    <main>
+      <Header />
+      <HomeBanner />
+      <WhyChooseUsSection />
+      <TestimonialSection />
+      <Footer />
+    </main>
+  );
 }
