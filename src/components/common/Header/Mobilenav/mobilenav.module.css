@@ -4,7 +4,7 @@
 .sidemenu {
   @apply fixed inset-0 z-50 flex;
   & > .dialogpanel {
-    @apply relative flex w-2/3 no-scrollbar z-[-1] bg-green flex-col overflow-y-scroll pb-4;
+    @apply relative flex w-2/3 z-[-1] bg-green flex-col overflow-y-scroll pb-4;
     & > .container {
       @apply flex flex-col px-4 gap-10;
       & > .menuheader {
