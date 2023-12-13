@@ -1,5 +1,9 @@
 .main {
-  @apply relative;
+  @apply relative my-8;
+}
+.image {
+  @apply aspect-square w-full relative;
+  transition: 0.3s ease-in-out;
 }
 .main::before {
   content: "";
@@ -7,12 +11,21 @@
   height: 0;
   width: 100%;
   bottom: 0;
-  background-color: green;
-  opacity: 10%;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  @apply bg-greenLight;
 }
 .main:hover::before {
-  height: 60%;
-  transition: 0.4s ease-in-out;
+  height: 65%;
   z-index: -1;
+}
+.main:hover .image {
+  @apply -translate-y-[10%];
+}
+.btnWrapper {
+  @apply opacity-0;
+  transition: 0.3s ease-in-out;
+}
+.main:hover .btnWrapper {
+  @apply opacity-100 translate-y-1/2;
 }

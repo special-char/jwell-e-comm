@@ -20,23 +20,25 @@ const ProductCard = ({ data }: Props) => {
   return (
     <div
       key={data.id}
-      className={`flex flex-col gap-4 items-center py-5 ${Styles.main}`}
+      className={`flex flex-col justify-between w-full items-center ${Styles.main}`}
     >
-      <div className="aspect-square w-[250px] relative">
-        <Image
-          src={data.imgUrl}
-          alt={data.title}
-          fill
-          style={{ objectFit: "contain" }}
-        />
+      <div className="flex flex-col gap-6 w-full items-center py-6 px-4">
+        <div className={Styles.image}>
+          <Image
+            src={data.imgUrl}
+            alt={data.title}
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="small font-semibold">{data.title}</p>
+          <p className="font-bold">{data.price}</p>
+        </div>
       </div>
-      <div className="flex flex-col items-center gap-2">
-        <p>{data.title}</p>
-        <p className="font-bold">{data.price}</p>
-      </div>
-      <div className="absolute -bottom-5 ">
+      <div className={Styles.btnWrapper}>
         <Button variant="round" color="black">
-          <Icon className={"h-4"} />
+          <Icon className="h-4" />
         </Button>
       </div>
     </div>
