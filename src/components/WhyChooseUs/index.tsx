@@ -6,7 +6,7 @@ import ServiceCard from "@/components/common/ServiceCard";
 
 type Props = {};
 
-const WhyChooseUsSection = (props: Props) => {
+const WhyChooseUs = (props: Props) => {
   return (
     <section className="pt-20">
       <div className={style.container}>
@@ -38,4 +38,4 @@ const WhyChooseUsSection = (props: Props) => {
   );
 };
 
-export default WhyChooseUsSection;
+export default WhyChooseUs;

@@ -1,3 +1,27 @@
+export type DesktopNavType = {
+  data: {
+    heading1: string;
+    heading2: string;
+    navLinks: Array<{
+      id: number;
+      title: string;
+      url: string;
+    }>;
+  };
+};
+
+export type MobileNavType = {
+  data: {
+    heading1: string;
+    heading2: string;
+    navLinks: Array<{
+      id: number;
+      title: string;
+      url: string;
+    }>;
+  };
+};
+
 export type BannerPropsType = {
   data: {
     backgroundBannerImage: string;
