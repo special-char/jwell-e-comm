@@ -57,7 +57,7 @@
 		}
 
 		& > .copyrightWrapper {
-			@apply flex max-md:flex-col md:justify-between gap-4 text-gray;
+			@apply flex max-md:flex-col items-center md:justify-between gap-2 md:gap-4 text-gray;
 
 			& > .copyrightLinks {
 				@apply flex gap-4 justify-center items-center;
