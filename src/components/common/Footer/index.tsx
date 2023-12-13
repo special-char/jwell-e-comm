@@ -23,7 +23,7 @@ const Footer = (props: Props) => {
 						{footerData.newsLetter.heading}
 					</p>
 				</div>
-				<form className="flex gap-4 items-center">
+				<form className="flex gap-4 items-center flex-wrap">
 					<Input name="name" placeholder="Enter your name" />
 					<Input name="email" placeholder="Enter your email" type="email" />
 					<Button
