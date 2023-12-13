@@ -1,16 +1,16 @@
-import Header from "@/components/common/Header";
 import HomeBanner from "@/containers/HomeBanner";
-import HomeProduct from "@/containers/HomeProduct";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import TestimonialSection from "@/containers/TestimonialSection";
+import ProductCard from "@/components/common/ProductCard";
+import { products } from "@/lib/data";
 
 export default function Home() {
   return (
     <main>
-      <Header />
       <HomeBanner />
-      <HomeProduct />
-      <WhyChooseUsSection />
+      <WhyChooseUs />
       <TestimonialSection />
-      <Footer />
+      <ProductCard data={products[0]} />
     </main>
   );
 }
