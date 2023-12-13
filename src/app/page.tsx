@@ -2,7 +2,7 @@ import Banner from "@/components/common/Banner";
 import TestimonialSection from "@/containers/TestimonialSection";
 import WhyChooseUsSection from "@/containers/WhyChooseUs";
 import Link from "next/link";
-import { homePageBanner } from "@/lib/data";
+import { homePageBanner, products } from "@/lib/data";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 
