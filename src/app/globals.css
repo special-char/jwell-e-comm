@@ -12,6 +12,7 @@
 @layer base {
   :root {
     --color-green: 59 93 80;
+    --color-green-light: 220 229 228;
     --color-yellow: 249 191 41;
     --color-black: 47 47 47;
     --color-gray: 106 106 106;

@@ -10,12 +10,16 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   as?: any;
 } & (
     | {
-        variant?: "fill" | "round";
+        variant?: "fill";
         color?: "green" | "yellow" | "black";
       }
     | {
         variant?: "outlined";
         color?: "light" | "dark";
+      }
+    | {
+        variant?: "round";
+        color?: "black" | "green";
       }
     | {
         variant?: "icon";
