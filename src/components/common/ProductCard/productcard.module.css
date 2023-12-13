@@ -1,10 +1,32 @@
 .main {
-  @apply relative my-8;
+  @apply flex flex-col justify-between w-full items-center relative my-8;
+
+  & > .productWrapper {
+    @apply flex flex-col gap-6 w-full items-center py-6 px-4;
+
+    & > .image {
+      @apply aspect-square w-full relative;
+      transition: 0.3s ease-in-out;
+    }
+
+    & > .content {
+      @apply flex flex-col items-center;
+
+      & > .title {
+        @apply text-caption1 font-semibold;
+      }
+      & > .price {
+        @apply font-bold;
+      }
+    }
+  }
+
+  & > .btnWrapper {
+    @apply opacity-0;
+    transition: 0.3s ease-in-out;
+  }
 }
-.image {
-  @apply aspect-square w-full relative;
-  transition: 0.3s ease-in-out;
-}
+
 .main::before {
   content: "";
   position: absolute;
@@ -22,10 +44,7 @@
 .main:hover .image {
   @apply -translate-y-[10%];
 }
-.btnWrapper {
-  @apply opacity-0;
-  transition: 0.3s ease-in-out;
-}
+
 .main:hover .btnWrapper {
   @apply opacity-100 translate-y-1/2;
 }

@@ -18,11 +18,8 @@ const ProductCard = ({ data }: Props) => {
   const Icon = data.btn;
 
   return (
-    <div
-      key={data.id}
-      className={`flex flex-col justify-between w-full items-center ${Styles.main}`}
-    >
-      <div className="flex flex-col gap-6 w-full items-center py-6 px-4">
+    <div key={data.id} className={Styles.main}>
+      <div className={Styles.productWrapper}>
         <div className={Styles.image}>
           <Image
             src={data.imgUrl}
@@ -31,9 +28,9 @@ const ProductCard = ({ data }: Props) => {
             style={{ objectFit: "contain" }}
           />
         </div>
-        <div className="flex flex-col items-center">
-          <p className="small font-semibold">{data.title}</p>
-          <p className="font-bold">{data.price}</p>
+        <div className={Styles.content}>
+          <p className={Styles.title}>{data.title}</p>
+          <p className={Styles.price}>{data.price}</p>
         </div>
       </div>
       <div className={Styles.btnWrapper}>

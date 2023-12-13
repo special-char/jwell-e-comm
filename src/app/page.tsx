@@ -11,8 +11,6 @@ export default function Home() {
     <main className="flex flex-col gap-2">
       <div className="flex">
         <ProductCard data={products[0]} />
-        <ProductCard data={products[1]} />
-        <ProductCard data={products[2]} />
       </div>
       <h2>Normal Routes</h2>
       <Link href="/products">shop or all products</Link>
