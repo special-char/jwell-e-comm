@@ -10,7 +10,8 @@ const SocialIcons = (props: Props) => {
 				const Icon = item.icon;
 				return (
 					<Button key={item.id} variant="round" color="green">
-						<Icon className={"h-4"} />
+						<span className="sr-only">{item.name} account button</span>
+						<Icon className="h-4" />
 					</Button>
 				);
 			})}

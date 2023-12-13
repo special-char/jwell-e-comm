@@ -39,9 +39,11 @@ const DesktopNav = ({ data }: DesktopNavType) => {
 				</div>
 				<div className={style.icons}>
 					<Button variant="icon">
+						<span className="sr-only">user account button</span>
 						<UserIcon className="h-5" />
 					</Button>
 					<Button variant="icon">
+						<span className="sr-only">go to cart button</span>
 						<CartIcon className="h-5" />
 					</Button>
 				</div>

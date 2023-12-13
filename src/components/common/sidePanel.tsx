@@ -56,7 +56,7 @@ const SidePanel = ({ children }: Props) => {
 														onClick={onDismiss}
 													>
 														<span className="absolute -inset-0.5" />
-														<span className="sr-only">Close panel</span>
+														<span className="sr-only">Close panel button</span>
 														<XMarkIcon className="h-6 w-6" aria-hidden="true" />
 													</button>
 												</div>

@@ -33,6 +33,7 @@ const Footer = (props: Props) => {
 						className="!rounded-xl"
 						type="submit"
 					>
+						<span className="sr-only">Subscribe to Newsletter button</span>
 						<SendIcon className={styles.newsLetterFormIcon} />
 					</Button>
 				</form>

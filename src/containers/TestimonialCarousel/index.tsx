@@ -43,12 +43,14 @@ const TestimonialCarousel = (props: Props) => {
 					type="button"
 					className="testimonial-carousel-prev-btn swiper-custom-navigation-btn left-0"
 				>
+					<span className="sr-only">testimonial carousel previous button</span>
 					<PrevIcon className={styles.btnIcon} />
 				</button>
 				<button
 					type="button"
 					className="testimonial-carousel-next-btn swiper-custom-navigation-btn right-0"
 				>
+					<span className="sr-only">testimonial carousel next button</span>
 					<NextIcon className={styles.btnIcon} />
 				</button>
 			</div>
