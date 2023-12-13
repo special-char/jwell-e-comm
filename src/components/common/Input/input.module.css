@@ -1,18 +1,17 @@
 .inputGroup {
-  @apply mb-2;
+	& .label {
+		@apply font-semibold;
 
-  & .label {
-    @apply font-semibold;
-    &.label_required {
-      @apply after:content-["*"];
-    }
-  }
+		&.label_required {
+			@apply after:content-["*"];
+		}
+	}
 
-  & .inputWrapper {
-    @apply relative flex;
+	& .inputWrapper {
+		@apply relative flex;
 
-    & .input {
-      @apply px-4 py-3 rounded-xl bg-white outline-none w-full placeholder:text-black border border-gray/30 focus:border-green;
-    }
-  }
+		& .input {
+			@apply px-4 py-3 rounded-xl bg-white outline-none w-full placeholder:text-black border border-gray/30 focus:border-green focus:shadow-md duration-300;
+		}
+	}
 }
