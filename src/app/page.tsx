@@ -7,7 +7,7 @@ import HomeBanner from "@/containers/HomeBanner";
 export default function Home() {
 	return (
 		<main>
-			<Header />́
+			<Header />
 			<HomeBanner />
 			<WhyChooseUsSection />
 			<TestimonialSection />
