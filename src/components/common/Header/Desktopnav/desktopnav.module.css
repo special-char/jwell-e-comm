@@ -1,5 +1,5 @@
-.desknav {
-  @apply flex items-center justify-between h-20 w-full;
+.deskNav {
+  @apply flex items-center justify-between h-20;
 
   & > .logoWrapper {
     @apply flex items-center;
@@ -11,7 +11,7 @@
     }
   }
 
-  & .navlinks {
+  & .navLinks {
     @apply max-md:hidden flex gap-16;
     & > .links {
       @apply flex items-center gap-12;
@@ -20,7 +20,7 @@
       }
     }
     & > .icons {
-      @apply flex gap-2;
+      @apply flex gap-2 max-w-full;
     }
   }
 }

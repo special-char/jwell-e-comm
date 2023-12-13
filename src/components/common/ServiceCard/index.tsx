@@ -18,7 +18,7 @@ const ServiceCard = ({ data }: Props) => {
       <Image src={data.icon} alt={data.heading} height={30} width={30} />
       <div className={style.detail}>
         <p>{data.heading}</p>
-        <p className={style.desc}>{data.detail}</p>
+        <p className={style.description}>{data.detail}</p>
       </div>
     </div>
   );
