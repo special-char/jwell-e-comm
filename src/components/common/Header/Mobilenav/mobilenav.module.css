@@ -1,14 +1,14 @@
-.blureffect {
+.blurEffect {
   @apply fixed inset-0 bg-gray opacity-25;
 }
-.sidemenu {
+.sideMenu {
   @apply fixed inset-0 z-50 flex;
-  & > .dialogpanel {
-    @apply relative flex w-2/3 z-[-1] bg-green flex-col overflow-y-scroll pb-4;
+  & > .dialogPanel {
+    @apply relative min-w-[200px] w-[70%] max-w-[250px] flex z-[-1] bg-green flex-col overflow-y-scroll pb-4;
     & > .container {
       @apply flex flex-col px-4 gap-10;
-      & > .menuheader {
-        @apply flex items-center justify-between h-20 px-4 bg-green;
+      & > .menuHeader {
+        @apply flex items-center justify-between h-20 bg-green;
         & .heading1 {
           @apply text-white text-subtitle2 m-0;
         }
@@ -16,7 +16,7 @@
           @apply text-white opacity-40 text-subtitle2 m-0;
         }
       }
-      & > .navlinks {
+      & > .navLinks {
         @apply flex flex-col gap-8;
         & > .link {
           @apply text-white opacity-50 hover:opacity-100 focus:opacity-100 relative pb-1;

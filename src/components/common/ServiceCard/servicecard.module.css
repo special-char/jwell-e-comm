@@ -2,7 +2,7 @@
   @apply flex flex-col gap-5;
   & > .detail {
     @apply flex flex-col gap-1;
-    & > .desc {
+    & > .description {
       @apply text-caption1 text-gray;
     }
   }

@@ -24,13 +24,13 @@ type Props = {
 const Desktopnav = ({ data }: Props) => {
   const [menuopen, setmenuopen] = useState(false);
   return (
-    <div className={style.desknav}>
+    <div className={style.deskNav}>
       <div className={style.logoWrapper}>
         <h1 className={style.heading1}>{data.heading1}</h1>
         <h1 className={style.heading2}>{data.heading2}</h1>
       </div>
       <div className="flex">
-        <div className={style.navlinks}>
+        <div className={style.navLinks}>
           <div className={style.links}>
             {data &&
               data.navLinks.map((item) => {
@@ -55,8 +55,7 @@ const Desktopnav = ({ data }: Props) => {
           <Button
             variant="icon"
             title="menu button"
-            as={"a"}
-            href="#open-menu"
+            as={"button"}
             onClick={() => setmenuopen(!menuopen)}
           >
             <HamburgerIcon className="h-6" />

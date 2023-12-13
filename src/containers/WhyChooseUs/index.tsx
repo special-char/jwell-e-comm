@@ -10,7 +10,7 @@ const WhyChooseUsSection = (props: Props) => {
   return (
     <section className="pt-20">
       <div className={style.container}>
-        <div className={style.detailpotion}>
+        <div className={style.detailPortion}>
           <div className={style.header}>
             <h1>{whyChooseUs.heading}</h1>
             <p>{whyChooseUs.desc}</p>
@@ -22,8 +22,8 @@ const WhyChooseUsSection = (props: Props) => {
               })}
           </div>
         </div>
-        <div className={style.imagepotion}>
-          <div className={style.imagewrapper}>
+        <div className={style.imagePortion}>
+          <div className={style.imageWrapper}>
             <Image
               src={whyChooseUs.image}
               alt="why choose us image"

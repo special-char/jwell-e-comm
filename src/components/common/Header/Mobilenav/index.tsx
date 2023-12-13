@@ -44,10 +44,10 @@ function Mobilenav({ data, open, setopen }: Props) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className={style.blureffect} onClick={closeMobileNav}></div>
+            <div className={style.blurEffect} onClick={closeMobileNav}></div>
           </Transition.Child>
 
-          <div className={style.sidemenu}>
+          <div className={style.sideMenu}>
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
@@ -57,9 +57,9 @@ function Mobilenav({ data, open, setopen }: Props) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className={`no-scrollbar ${style.dialogpanel}`}>
+              <Dialog.Panel className={`no-scrollbar ${style.dialogPanel}`}>
                 <div className={style.container}>
-                  <div className={style.menuheader}>
+                  <div className={style.menuHeader}>
                     <div className="flex items-center">
                       <h1 className={style.heading1}>{data.heading1}</h1>
                       <h1 className={style.heading2}>{data.heading2}</h1>
@@ -68,14 +68,13 @@ function Mobilenav({ data, open, setopen }: Props) {
                       <CrossIcon
                         className="h-6"
                         onClick={() => {
-                          history.go(-1);
                           setopen(false);
                         }}
                       />
                     </a>
                   </div>
 
-                  <div className={style.navlinks}>
+                  <div className={style.navLinks}>
                     {data &&
                       data.navLinks.map((item) => {
                         return (
