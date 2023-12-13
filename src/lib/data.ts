@@ -2,6 +2,9 @@ import Facebook from "@/public/icons/facebook.svg";
 import Twitter from "@/public/icons/twitter.svg";
 import Instagram from "@/public/icons/instagram.svg";
 import Linkedin from "@/public/icons/linkedin.svg";
+import Location from "@/public/icons/location.svg";
+import Email from "@/public/icons/email.svg";
+import Phone from "@/public/icons/phone.svg";
 
 //----------------------------NAVBAR----------------------------------//
 export const navbarData = {
@@ -411,19 +414,19 @@ export const contactDetails = [
   {
     id: 1,
     name: "Address",
-    icon: "",
+    icon: Location,
     description: "43 Raymouth Rd. Baltemoer, London 3910",
   },
   {
     id: 2,
     name: "Email",
-    icon: "",
+    icon: Email,
     description: "info@yourdomain.com",
   },
   {
     id: 3,
     name: "Phone-number",
-    icon: "",
+    icon: Phone,
     description: "+1 294 3925 3939",
   },
 ];
