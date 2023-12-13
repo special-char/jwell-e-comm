@@ -6,7 +6,7 @@ type Props = {};
 const SocialIcons = (props: Props) => {
   return (
     <div className="flex gap-2">
-      {footerData.socialmedia.map((item) => {
+      {footerData.socialMedia.map((item) => {
         const Icon = item.icon;
         return (
           <Button key={item.id} variant="round">

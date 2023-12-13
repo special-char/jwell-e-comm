@@ -2,7 +2,6 @@ import Facebook from "@/public/icons/facebook.svg";
 import Twitter from "@/public/icons/twitter.svg";
 import Instagram from "@/public/icons/instagram.svg";
 import Linkedin from "@/public/icons/linkedin.svg";
-import Plus from "@/public/icons/plus.svg";
 
 //----------------------------NAVBAR----------------------------------//
 export const navbarData = {
@@ -34,7 +33,7 @@ export const navbarData = {
 
 //-------------------------------HOME PAGE ------------------------------//
 export const homePageBanner = {
-  backgroundBannerproductImage: "/images/bannerImage.png",
+  backgroundBannerImage: "/images/bannerImage.png",
   heading: "Less is more when it comes to skin care.",
   description: "Beautifull you",
   actionBtn1: "Shop Now",
@@ -45,7 +44,7 @@ export const topProduct = {
   heading: "Crafted with excellent material.",
   description:
     "Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.",
-  actionBtn1: "Explore",
+  actionBtn: "Explore",
 };
 
 export const whyChooseUs = {
@@ -127,7 +126,7 @@ export const testimonialData = {
         '"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque."',
       image: "/images/person-1.png",
       name: "Maria Jones",
-      position: "CEO, Co-Founder, XYZ Inc.",
+      designation: "CEO, Co-Founder, XYZ Inc.",
     },
     {
       id: 2,
@@ -135,7 +134,7 @@ export const testimonialData = {
         '"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque."',
       image: "/images/person-1.png",
       name: "Maria Jones",
-      position: "CEO, Co-Founder, XYZ Inc.",
+      designation: "CEO, Co-Founder, XYZ Inc.",
     },
     {
       id: 3,
@@ -143,7 +142,7 @@ export const testimonialData = {
         '"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque."',
       image: "/images/person-1.png",
       name: "Maria Jones",
-      position: "CEO, Co-Founder, XYZ Inc.",
+      designation: "CEO, Co-Founder, XYZ Inc.",
     },
   ],
 };
@@ -151,12 +150,13 @@ export const testimonialData = {
 //-------------------------------FOOTER-------------------------------//
 
 export const footerData = {
-  newsletter: {
+  newsLetter: {
     heading: "Subscribe to Newsletter",
   },
   heading: "Furni.",
-  desc: "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant",
-  socialmedia: [
+  description:
+    "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant",
+  socialMedia: [
     {
       id: 1,
       name: "facebook",
@@ -183,69 +183,69 @@ export const footerData = {
       {
         id: 1,
         title: "About us",
-        link: "/",
+        url: "/",
       },
       {
         id: 2,
         title: "Service",
-        link: "/",
+        url: "/",
       },
 
       {
         id: 3,
         title: "Contact us",
-        link: "/",
+        url: "/",
       },
     ],
     [
       {
         id: 1,
         title: "Support",
-        link: "/",
+        url: "/",
       },
       {
         id: 2,
         title: "Knowledge base",
-        link: "/",
+        url: "/",
       },
     ],
     [
       {
         id: 1,
         title: "Jobs",
-        link: "/",
+        url: "/",
       },
       {
         id: 2,
         title: "Our team",
-        link: "/",
+        url: "/",
       },
       {
         id: 3,
         title: "Leadership",
-        link: "/",
+        url: "/",
       },
       {
         id: 4,
         title: "Privacy Policy",
-        link: "/",
+        url: "/",
       },
     ],
     [
       {
         id: 1,
         title: "Nordic Chair",
-        link: "/",
+        url: "/",
       },
       {
         id: 2,
         title: "Kruzo Aero",
-        link: "/",
+        url: "/",
       },
       {
         id: 3,
         title: "Ergonomic Chair",
-        link: "/",
+        url: "/",
       },
     ],
   ],
@@ -261,82 +261,73 @@ export const shopPageBanner = {
 export const products = [
   {
     id: 1,
-    productUrl: "/images/product1.png",
+    productImage: "/images/product1.png",
     productName: "Nordic Chair",
     productPrice: "$50.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 2,
-    productUrl: "/images/product2.png",
+    productImage: "/images/product2.png",
     productName: "Kurzo Aero Chair",
     productPrice: "$78.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 3,
-    productUrl: "/images/product3.png",
+    productImage: "/images/product3.png",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 4,
-    productUrl: "",
+    productImage: "",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 5,
-    productUrl: "",
+    productImage: "",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 6,
-    productUrl: "",
+    productImage: "",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 7,
-    productUrl: "",
+    productImage: "",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 8,
-    productUrl: "",
+    productImage: "",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
   {
     id: 9,
-    productUrl: "",
+    productImage: "",
     productName: "Ergonomic Chair",
     productPrice: "$43.00",
-    addBtn: Plus,
     productDescription:
       "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
   },
@@ -393,6 +384,7 @@ export const aboutUsPageBanner = {
 //     },
 //   ],
 // };
+
 //----------------------------SERVICES------------------------//
 
 export const servicePageBanner = {

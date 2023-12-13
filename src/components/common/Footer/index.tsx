@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
         <div className="flex gap-2 items-center">
           <MailIcon className="w-8 aspect-square" />
           <p className="font-semibold text-green">
-            {footerData.newsletter.heading}
+            {footerData.newsLetter.heading}
           </p>
         </div>
         <div>form</div>
@@ -27,7 +27,7 @@ const Footer = (props: Props) => {
         <h4 className="text-green font-semibold">{footerData.heading}</h4>
         <div className="grid lg:grid-cols-[30%_1fr] gap-8 mb-10">
           <div className="flex flex-col gap-4">
-            <p className="small text-gray">{footerData.desc}</p>
+            <p className="small text-gray">{footerData.description}</p>
             <SocialIcons />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 gap-y-10">
@@ -38,7 +38,7 @@ const Footer = (props: Props) => {
                     return (
                       <Link
                         key={link.id}
-                        href={link.link}
+                        href={link.url}
                         className="hover:text-gray/70 duration-300"
                       >
                         {link.title}
