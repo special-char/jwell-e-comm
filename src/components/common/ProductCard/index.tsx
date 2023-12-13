@@ -1,41 +1,30 @@
 import React from "react";
-import { products } from "@/lib/data";
+import { ProductCardType } from "@/utils/types";
 import Image from "next/image";
-import Styles from "./productcard.module.css";
+import Styles from "./productCard.module.css";
 import Button from "../Button";
-type Props = {
-  data: {
-    id: number;
-    imgUrl: string;
-    title: string;
-    price: string;
-    btn: string;
-    desription: string;
-  };
-};
+import Plus from "@/public/icons/plus.svg";
 
-const ProductCard = ({ data }: Props) => {
-  const Icon = data.btn;
-
+const ProductCard = ({ data }: ProductCardType) => {
   return (
     <div key={data.id} className={Styles.main}>
       <div className={Styles.productWrapper}>
-        <div className={Styles.image}>
+        <div className={Styles.productImage}>
           <Image
-            src={data.imgUrl}
-            alt={data.title}
+            src={data.productImage}
+            alt={data.productName}
             fill
             style={{ objectFit: "contain" }}
           />
         </div>
         <div className={Styles.content}>
-          <p className={Styles.title}>{data.title}</p>
-          <p className={Styles.price}>{data.price}</p>
+          <p className={Styles.productName}>{data.productName}</p>
+          <p className={Styles.productPrice}>{data.productPrice}</p>
         </div>
       </div>
       <div className={Styles.btnWrapper}>
         <Button variant="round" color="black">
-          <Icon className="h-4" />
+          <Plus className="h-4" />
         </Button>
       </div>
     </div>

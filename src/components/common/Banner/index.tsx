@@ -1,42 +1,36 @@
 import React from "react";
 import Image from "next/image";
 import Styles from "./banner.module.css";
+import Button from "../Button";
+import { BannerPropsType } from "@/utils/types";
 
-type Props = {
-  data: {
-    heading: string;
-    desc?: string;
-    btn1?: string;
-    btn2?: string;
-    bgImage?: string;
-  };
-};
-
-const Banner = ({ data }: Props) => {
+const Banner = ({ data }: BannerPropsType) => {
   return (
     <section className={Styles.gridSection}>
-      <div className={Styles.content}>
-        <div className={Styles.heading}>
-          <h2 className={Styles.title}>{data.heading}</h2>
-          {data.desc && <p className={Styles.desc}>&quot;{data.desc}&quot;</p>}
-        </div>
-        <div className={Styles.buttons}>
-          {data.btn1 && (
-            <button type="button" className={Styles.btn1}>
-              {data.btn1}
-            </button>
+      <div className={Styles.contentWrapper}>
+        <div className={Styles.content}>
+          <h2 className={Styles.heading}>{data.heading}</h2>
+          {data.description && (
+            <p className={Styles.description}>&quot;{data.description}&quot;</p>
           )}
-          {data.btn2 && (
-            <button type="button" className={Styles.btn2}>
-              {data.btn2}
-            </button>
+        </div>
+        <div className={Styles.bannerButtons}>
+          {data.actionBtn1 && (
+            <Button variant="fill" color="yellow">
+              {data.actionBtn1}
+            </Button>
+          )}
+          {data.actionBtn2 && (
+            <Button variant="outlined" color="light">
+              {data.actionBtn2}
+            </Button>
           )}
         </div>
       </div>
-      <div className={Styles.bgImage}>
-        {data.bgImage && (
+      <div className={Styles.backgroundBannerImage}>
+        {data.backgroundBannerImage && (
           <Image
-            src={data.bgImage}
+            src={data.backgroundBannerImage}
             alt={"Banner Image"}
             fill
             style={{ objectFit: "contain" }}
