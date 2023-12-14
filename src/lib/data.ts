@@ -153,6 +153,7 @@ export const testimonialData = {
 //-------------------------------FOOTER-------------------------------//
 
 export const footerData = {
+  footerImage: "/images/footerImage.png",
   newsLetter: {
     heading: "Subscribe to Newsletter",
   },
@@ -252,6 +253,21 @@ export const footerData = {
       },
     ],
   ],
+  copyright: {
+    description: "Copyright ©2023. All Rights Reserved.",
+    links: [
+      {
+        id: 1,
+        title: "Terms & Conditions",
+        url: "/terms-and-conditions",
+      },
+      {
+        id: 2,
+        title: "Privacy Policy",
+        url: "/privacy-policy",
+      },
+    ],
+  },
 };
 
 //-----------------------------SHOP SECTION---------------------------------------------//
