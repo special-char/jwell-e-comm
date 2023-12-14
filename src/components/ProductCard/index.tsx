@@ -11,7 +11,7 @@ const ProductCard = ({ data }: ProductCardType) => {
 			<div className={Styles.productWrapper}>
 				<div className={Styles.productImage}>
 					<Image
-						src={data.productImage}
+						src={data.productThumbnail.url}
 						alt={data.productName}
 						fill
 						style={{ objectFit: "contain" }}

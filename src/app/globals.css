@@ -123,6 +123,6 @@
 	--swiper-pagination-color: rgba(59 93 80);
 }
 .swiper-custom-navigation-btn {
-	@apply max-sm:hidden absolute z-10 top-1/2 -translate-y-[calc(40px+50%)] w-14 aspect-square bg-green bg-opacity-20 rounded-full text-green hover:bg-opacity-100 hover:text-white duration-300 flex justify-center items-center cursor-pointer;
+	@apply max-sm:hidden absolute z-10 top-1/2 w-14 aspect-square bg-green bg-opacity-20 rounded-full text-green hover:bg-opacity-100 hover:text-white duration-300 flex justify-center items-center cursor-pointer;
 }
 /* ------------------- swiper ends ------------------- */

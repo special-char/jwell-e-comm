@@ -41,14 +41,14 @@ const TestimonialCarousel = (props: Props) => {
 				</Swiper>
 				<button
 					type="button"
-					className="testimonial-carousel-prev-btn swiper-custom-navigation-btn left-0"
+					className="testimonial-carousel-prev-btn swiper-custom-navigation-btn -translate-y-[calc(40px+50%)] left-0"
 				>
 					<span className="sr-only">testimonial carousel previous button</span>
 					<PrevIcon className={styles.btnIcon} />
 				</button>
 				<button
 					type="button"
-					className="testimonial-carousel-next-btn swiper-custom-navigation-btn right-0"
+					className="testimonial-carousel-next-btn swiper-custom-navigation-btn -translate-y-[calc(40px+50%)] right-0"
 				>
 					<span className="sr-only">testimonial carousel next button</span>
 					<NextIcon className={styles.btnIcon} />
