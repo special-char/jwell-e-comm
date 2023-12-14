@@ -1,9 +1,16 @@
 import React from "react";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import TestimonialSection from "@/containers/TestimonialSection";
+import AboutUsBanner from "@/containers/AboutUsBanner";
 
-type Props = {};
-
-const page = (props: Props) => {
-	return <div>about us page</div>;
+const page = () => {
+  return (
+    <>
+      <AboutUsBanner />
+      <WhyChooseUs />
+      <TestimonialSection />
+    </>
+  );
 };
 
 export default page;

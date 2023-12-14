@@ -2,15 +2,31 @@ import React, { forwardRef, memo } from "react";
 import style from "./input.module.css";
 import clsx from "clsx";
 
-type Props = React.InputHTMLAttributes<HTMLInputElement> & {
+type Props = {
 	name: string;
 	color?: "white";
-	className?: any;
+	className?: string;
+	wrapperClassName?: string;
 	label?: string;
-};
-const Input = ({ name, color, label, className, ...props }: Props) => {
+} & (
+	| (React.InputHTMLAttributes<HTMLInputElement> & {
+			as?: "input";
+	  })
+	| (React.TextareaHTMLAttributes<HTMLTextAreaElement> & {
+			as?: "textarea";
+	  })
+);
+const Input = ({
+	as: As = "input",
+	name,
+	color,
+	label,
+	wrapperClassName,
+	className,
+	...props
+}: Props) => {
 	return (
-		<div className={style.inputGroup}>
+		<div className={clsx([style.inputGroup, wrapperClassName])}>
 			{label && (
 				<label
 					htmlFor={name}
@@ -22,12 +38,11 @@ const Input = ({ name, color, label, className, ...props }: Props) => {
 				</label>
 			)}
 			<span className={clsx(style.inputWrapper)}>
-				<input
+				<As
 					className={clsx(style.input, "peer/input", {
 						[style[`input--${color}`]]: !!color,
 						[className || ""]: !!className,
 					})}
-					name={name}
 					{...props}
 				/>
 			</span>
