@@ -6,8 +6,14 @@ type Props = {
   };
 };
 const page = ({ params }: Props) => {
-  const ProductDetail = products[0];
-  return <ProductModal data={ProductDetail} />;
+  const selectedProduct = products.find(
+    (product) => product.id === Number(params.handle)
+  );
+
+  if (!selectedProduct) {
+    return <p>Product not found</p>;
+  }
+  return <ProductModal data={selectedProduct} />;
 };
 
 export default page;
