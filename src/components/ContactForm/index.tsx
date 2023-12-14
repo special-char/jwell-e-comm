@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "../common/Input";
 import Button from "../common/Button";
+import style from "./contactform.module.css";
 
 const ContactForm = () => {
   async function contactFormSubmit(formData: FormData) {
@@ -19,9 +20,9 @@ const ContactForm = () => {
     // revalidate cache
   }
   return (
-    <form className="flex flex-col gap-8" action={contactFormSubmit}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="grid sm:grid-cols-2 sm:col-span-2 gap-4">
+    <form className={style.form} action={contactFormSubmit}>
+      <div className={style.formInput}>
+        <div className={style.nameInput}>
           <Input name="firstname" label="First name" />
           <Input name="lastname" label="Last name" />
         </div>
