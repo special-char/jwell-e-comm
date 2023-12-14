@@ -29,8 +29,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
         <Header />
-        {children}
         {modal}
+        {children}
         <Footer />
       </body>
     </html>
