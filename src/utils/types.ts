@@ -59,3 +59,10 @@ export type ServiceCardType = {
     serviceDescription: string;
   };
 };
+export type ContactDetailType = {
+  data: {
+    id: number;
+    icon: string;
+    description: string;
+  };
+};
