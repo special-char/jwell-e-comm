@@ -29,7 +29,7 @@ const config: Config = {
 						lineHeight: "1.3",
 						letterSpacing: "-0.01em",
 						// fontWeight: "700",
-						fontWeight: "400",
+						fontWeight: "600",
 					},
 				],
 				heading2: [
@@ -38,7 +38,7 @@ const config: Config = {
 						lineHeight: "1.3",
 						letterSpacing: "-0.01em",
 						// fontWeight: "700",
-						fontWeight: "400",
+						fontWeight: "600",
 					},
 				],
 				heading3: [
@@ -47,7 +47,7 @@ const config: Config = {
 						lineHeight: "1.3",
 						letterSpacing: "-0.01em",
 						// fontWeight: "700",
-						fontWeight: "400",
+						fontWeight: "600",
 					},
 				],
 				heading4: [
@@ -56,7 +56,7 @@ const config: Config = {
 						lineHeight: "1.3",
 						letterSpacing: "-0.01em",
 						// fontWeight: "700",
-						fontWeight: "400",
+						fontWeight: "600",
 					},
 				],
 				heading5: [
@@ -65,7 +65,7 @@ const config: Config = {
 						lineHeight: "1.3",
 						letterSpacing: "-0.01em",
 						// fontWeight: "700",
-						fontWeight: "400",
+						fontWeight: "600",
 					},
 				],
 				heading6: [
@@ -74,7 +74,7 @@ const config: Config = {
 						lineHeight: "1.3",
 						letterSpacing: "-0.01em",
 						// fontWeight: "700",
-						fontWeight: "400",
+						fontWeight: "600",
 					},
 				],
 				subtitle1: [

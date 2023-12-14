@@ -2,7 +2,7 @@ import React from "react";
 import { ProductCardType } from "@/utils/types";
 import Image from "next/image";
 import Styles from "./productCard.module.css";
-import Button from "../Button";
+import Button from "../common/Button";
 import Plus from "@/public/icons/plus.svg";
 
 const ProductCard = ({ data }: ProductCardType) => {
