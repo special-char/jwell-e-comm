@@ -1,20 +1,13 @@
-import Modal from "@/components/common/Model";
-
+import ProductModal from "@/components/products/ProductModal";
+import { products } from "@/lib/data";
 type Props = {
-	params: {
-		handle: string;
-	};
+  params: {
+    handle: string;
+  };
 };
-
 const page = ({ params }: Props) => {
-	return (
-		<Modal>
-			<div>
-				Product detail with id:{" "}
-				<span className="text-rose-500">{params.handle}</span>
-			</div>
-		</Modal>
-	);
+  const ProductDetail = products[0];
+  return <ProductModal data={ProductDetail} />;
 };
 
 export default page;
