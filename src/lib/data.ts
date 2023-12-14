@@ -302,6 +302,8 @@ export const products = [
 		productPrice: "$50.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 2,
@@ -327,6 +329,8 @@ export const products = [
 		productPrice: "$78.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 3,
@@ -352,6 +356,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 4,
@@ -377,6 +383,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 5,
@@ -402,6 +410,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 6,
@@ -427,6 +437,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 7,
@@ -452,6 +464,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 8,
@@ -477,6 +491,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 	{
 		id: 9,
@@ -502,6 +518,8 @@ export const products = [
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+		reviewCount: 55,
+		rating: 3,
 	},
 ];
 //-------------------------------------ABOUT US -------------------------------------------//

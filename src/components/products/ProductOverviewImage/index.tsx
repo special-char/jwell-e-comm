@@ -41,8 +41,6 @@ const ProductOverviewImage = ({
 	};
 
 	const handleSlideChange = (swiper) => {
-		console.log(swiper.activeIndex);
-
 		setCurrentIndex(swiper.activeIndex);
 	};
 
@@ -82,7 +80,11 @@ const ProductOverviewImage = ({
 						className="absolute top-5 right-5 z-10 bg-white p-2 rounded-full"
 					></button> */}
 					<div className="absolute top-5 right-5 z-10">
-						<Button variant="round" color="green" onClick={handleClosePopup}>
+						<Button
+							variant="round"
+							onClick={handleClosePopup}
+							className={"bg-white"}
+						>
 							<X className="w-6 h-6" />
 						</Button>
 					</div>
@@ -115,14 +117,14 @@ const ProductOverviewImage = ({
 							})}
 							<button
 								type="button"
-								className="productPopupCarouselPrevBtn swiper-custom-navigation-btn left-4 -translate-y-1/2"
+								className="productPopupCarouselPrevBtn swiper-custom-navigation-btn disabled:bg-gray/30 !bg-opacity-100 !text-white left-4 -translate-y-1/2"
 							>
 								<PrevIcon className="w-6 aspect-square" />
 								<span className="sr-only">Previous button</span>
 							</button>
 							<button
 								type="button"
-								className="productPopupCarouselNextBtn swiper-custom-navigation-btn right-4 -translate-y-1/2"
+								className="productPopupCarouselNextBtn swiper-custom-navigation-btn disabled:bg-gray/30 !bg-opacity-100 !text-white right-4 -translate-y-1/2"
 							>
 								<NextIcon className="w-6 aspect-square" />
 								<span className="sr-only">Next Button</span>
