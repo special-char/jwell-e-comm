@@ -1,7 +1,7 @@
 import React from "react";
 import { topProduct, products } from "@/lib/data";
 import Button from "@/components/common/Button";
-import ProductCard from "@/components/common/ProductCard";
+import ProductCard from "@/components/ProductCard";
 type Props = {};
 
 const HomeProducts = (props: Props) => {

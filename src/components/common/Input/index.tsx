@@ -27,6 +27,7 @@ const Input = ({ name, color, label, className, ...props }: Props) => {
 						[style[`input--${color}`]]: !!color,
 						[className || ""]: !!className,
 					})}
+					name={name}
 					{...props}
 				/>
 			</span>

@@ -1,12 +1,9 @@
 import { footerData } from "@/lib/data";
 import Link from "next/link";
-import MailIcon from "@/public/icons/envelope-outline.svg";
-import Button from "@/components/common/Button";
-import SocialIcons from "@/components/common/SocialIcons";
-import SendIcon from "@/public/icons/send.svg";
-import Input from "../Input";
+import SocialIcons from "@/components/SocialIcons";
 import Image from "next/image";
 import styles from "./footer.module.css";
+import NewsLetter from "@/components/NewsLetter";
 
 type Props = {};
 
@@ -17,27 +14,7 @@ const Footer = (props: Props) => {
 				<Image fill src={footerData.footerImage} alt="footer image" />
 			</div>
 			{/* newsletter */}
-			<section>
-				<div className={styles.newsLetterHeadingWrapper}>
-					<MailIcon className={styles.newsLetterHeadingIcon} />
-					<p className={styles.newsLetterHeading}>
-						{footerData.newsLetter.heading}
-					</p>
-				</div>
-				<form className={styles.newsLetterForm}>
-					<Input name="name" placeholder="Enter your name" />
-					<Input name="email" placeholder="Enter your email" type="email" />
-					<Button
-						variant="fill"
-						color="green"
-						className="!rounded-xl"
-						type="submit"
-					>
-						<span className="sr-only">Subscribe to Newsletter button</span>
-						<SendIcon className={styles.newsLetterFormIcon} />
-					</Button>
-				</form>
-			</section>
+			<NewsLetter />
 			<footer className={styles.footer}>
 				<h4 className={styles.heading}>{footerData.heading}</h4>
 				<div className={styles.footerDataWrapper}>
