@@ -49,14 +49,13 @@ const ProductModal = ({ data }: ProductCardType) => {
           >
             Add to bag
           </Button>
-          <Link href={"#"} className="text-blue-500 text-center">
+          <a
+            href={`/products/${data.id}`}
+            className="text-blue-500 text-center"
+          >
             view more
-          </Link>
+          </a>
         </div>
-        {/* <div>
-        Product detail with id:{" "}
-        <span className="text-rose-500">{params.handle}</span>
-      </div> */}
       </div>
     </Modal>
   );
