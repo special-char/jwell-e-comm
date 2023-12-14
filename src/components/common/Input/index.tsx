@@ -43,6 +43,7 @@ const Input = ({
 						[style[`input--${color}`]]: !!color,
 						[className || ""]: !!className,
 					})}
+					name={name}
 					{...props}
 				/>
 			</span>
