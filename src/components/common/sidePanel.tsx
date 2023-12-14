@@ -1,7 +1,7 @@
 "use client";
 import { Dialog } from "@headlessui/react";
 import { useRouter } from "next/navigation";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import Cancel from "@/public/icons/cencel.svg";
 import clsx from "clsx";
 
 type Props = {
@@ -42,7 +42,7 @@ const SidePanel = ({ children, side = "left" }: Props) => {
                       >
                         <span className="absolute -inset-0.5" />
                         <span className="sr-only">Close panel</span>
-                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                        <Cancel className="h-6 w-6" aria-hidden="true" />
                       </button>
                     </div>
                   </div>
