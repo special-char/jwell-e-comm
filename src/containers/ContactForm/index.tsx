@@ -1,11 +1,12 @@
 import React from "react";
 import { contactDetails } from "@/lib/data";
 import Button from "@/components/common/Button";
+import Input from "@/components/common/Input";
 
 const ContactForm = () => {
   return (
     <section>
-      <section className="flex justify-evenly flex-wrap">
+      <div className="flex justify-between flex-wrap">
         {contactDetails.map((item) => {
           const Icon = item.icon;
           return (
@@ -21,7 +22,24 @@ const ContactForm = () => {
             </div>
           );
         })}
-      </section>
+      </div>
+      <form className="grid grid-cols-2 gap-4">
+        <Input name="Firstname" label="First name" />
+        <Input name="Lastname" label="Last name" />
+        <Input
+          name="Email"
+          label="Email"
+          type="email"
+          wrapperClassName="col-span-2"
+        />
+        <Input
+          as="textarea"
+          name="message"
+          label="Message"
+          rows={5}
+          wrapperClassName="col-span-2"
+        />
+      </form>
     </section>
   );
 };
