@@ -491,19 +491,37 @@ export const cartPage = {
   cartProductList: [
     {
       id: 1,
-      productImage: "",
+      productImage: "/images/product1.png",
       productName: "Chair",
       productPrice: "$50.00",
     },
     {
       id: 2,
-      productImage: "",
+      productImage: "/images/product2.png",
       productName: "Chair",
       productPrice: "$50.00",
     },
     {
       id: 3,
-      productImage: "",
+      productImage: "/images/product3.png",
+      productName: "Chair",
+      productPrice: "$50.00",
+    },
+    {
+      id: 4,
+      productImage: "/images/product1.png",
+      productName: "Chair",
+      productPrice: "$50.00",
+    },
+    {
+      id: 5,
+      productImage: "/images/product2.png",
+      productName: "Chair",
+      productPrice: "$50.00",
+    },
+    {
+      id: 6,
+      productImage: "/images/product3.png",
       productName: "Chair",
       productPrice: "$50.00",
     },

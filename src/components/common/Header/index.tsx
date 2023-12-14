@@ -1,7 +1,7 @@
 import React from "react";
 import { navbarData } from "@/lib/data";
-import Desktopnav from "./DesktopNav";
-import Mobilenav from "./MobileNav";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 type Props = {};
 
@@ -9,8 +9,8 @@ const Header = (props: Props) => {
   return (
     <>
       <header className="bg-green sticky top-0 z-40">
-        <Desktopnav data={navbarData} />
-        <Mobilenav data={navbarData} />
+        <DesktopNav data={navbarData} />
+        <MobileNav data={navbarData} />
       </header>
     </>
   );
