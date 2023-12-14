@@ -17,8 +17,7 @@ const NewsLetter = (props: Props) => {
 			email: formData.get("email"),
 		};
 
-		console.log(formData);
-		console.log(rawFormData);
+		console.log("formdata", rawFormData);
 
 		// mutate data
 		// revalidate cache

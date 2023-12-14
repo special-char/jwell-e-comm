@@ -10,8 +10,10 @@ type Props = {};
 const Footer = (props: Props) => {
 	return (
 		<div className={styles.footerWrapper}>
-			<div className={styles.footerImageWrapper}>
-				<Image fill src={footerData.footerImage} alt="footer image" />
+			<div className={styles.footerImageContainer}>
+				<div className={styles.footerImageWrapper}>
+					<Image fill src={footerData.footerImage} alt="footer image" />
+				</div>
 			</div>
 			{/* newsletter */}
 			<NewsLetter />
