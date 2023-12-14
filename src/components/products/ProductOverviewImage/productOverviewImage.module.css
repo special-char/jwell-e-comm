@@ -4,20 +4,10 @@
 	}
 
 	& > .main_image {
-		@apply max-w-[1024px] min-w-[200px] w-full bg-white mx-auto shadow-2xl rounded-3xl relative aspect-[4/3];
+		@apply max-w-[1024px] min-w-[200px] w-full bg-white mx-auto shadow-md rounded-md relative aspect-[4/3];
 
 		& .slide {
 			@apply w-full relative aspect-[16/9];
 		}
 	}
-}
-
-.skeleton_main_image {
-	@apply max-w-xl min-w-max bg-gray mx-auto rounded-3xl relative aspect-[4/3] animate-pulse;
-}
-.skeleton_image_grp {
-	@apply mt-5 max-w-xl  mx-auto overflow-auto whitespace-nowrap gap-3 sm:gap-5 animate-pulse;
-}
-.skele_btn {
-	@apply bg-gray mr-3 inline-block w-16 sm:w-20 md:w-24 rounded-lg relative aspect-[4/3] box-content select-none;
 }

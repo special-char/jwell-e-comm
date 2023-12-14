@@ -26,18 +26,18 @@ const ProductOverviewImage = ({
 	productImagesData,
 }: ProductOverviewImageProps) => {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
-	const [popupUrl, setPopupUrl] = useState<string | null>(null);
+	const [open, setOpen] = useState<boolean>(false);
 
 	const [currentIndex, setCurrentIndex] = useState<number | null>(0);
 	const swiperRef = useRef(null);
 	const mainSwiperRef = useRef(null);
 
 	const handleImagePopup = (url: string) => {
-		setPopupUrl(url);
+		setOpen(true);
 	};
 
 	const handleClosePopup = () => {
-		setPopupUrl(null);
+		setOpen(false);
 	};
 
 	const handleSlideChange = (swiper) => {
@@ -63,22 +63,17 @@ const ProductOverviewImage = ({
 		};
 
 		goToSlide();
-	}, [popupUrl, currentIndex]);
+	}, [open, currentIndex]);
 
 	return (
 		<>
 			<Dialog
-				open={!!popupUrl}
+				open={open}
 				onClose={handleClosePopup}
 				as="div"
-				className="fixed top-0 left-0 w-screen h-screen bg-black/40 backdrop-blur-sm z-50 animate-opacity"
+				className="fixed top-0 left-0 w-screen h-screen bg-black/40 backdrop-blur-sm z-50 p-4 animate-opacity"
 			>
-				<Dialog.Panel className="relative w-full h-full p-[4%]">
-					{/* <button
-						type="button"
-						onClick={handleClosePopup}
-						className="absolute top-5 right-5 z-10 bg-white p-2 rounded-full"
-					></button> */}
+				<Dialog.Panel className="relative w-full max-w-3xl mx-auto h-full bg-white p-[4%] rounded-md">
 					<div className="absolute top-5 right-5 z-10">
 						<Button
 							variant="round"
@@ -117,14 +112,14 @@ const ProductOverviewImage = ({
 							})}
 							<button
 								type="button"
-								className="productPopupCarouselPrevBtn swiper-custom-navigation-btn disabled:bg-gray/30 !bg-opacity-100 !text-white left-4 -translate-y-1/2"
+								className="productPopupCarouselPrevBtn swiper-custom-navigation-btn disabled:bg-gray/30 !bg-opacity-100 !text-white left-0 -translate-y-1/2"
 							>
 								<PrevIcon className="w-6 aspect-square" />
 								<span className="sr-only">Previous button</span>
 							</button>
 							<button
 								type="button"
-								className="productPopupCarouselNextBtn swiper-custom-navigation-btn disabled:bg-gray/30 !bg-opacity-100 !text-white right-4 -translate-y-1/2"
+								className="productPopupCarouselNextBtn swiper-custom-navigation-btn disabled:bg-gray/30 !bg-opacity-100 !text-white right-0 -translate-y-1/2"
 							>
 								<NextIcon className="w-6 aspect-square" />
 								<span className="sr-only">Next Button</span>
@@ -138,7 +133,6 @@ const ProductOverviewImage = ({
 					ref={mainSwiperRef}
 					spaceBetween={10}
 					navigation={true}
-					loop={true}
 					thumbs={{ swiper: thumbsSwiper }}
 					navigation={{
 						prevEl: ".productCarouselPrevBtn",
@@ -195,7 +189,7 @@ const ProductOverviewImage = ({
 								<SwiperSlide
 									key={index}
 									className={clsx(
-										"bg-white box-border border-2 border-gray/20 inline-block rounded-lg relative aspect-[4/3] hover:cursor-pointer select-none",
+										"bg-white box-border border-2 border-gray/20 inline-block rounded-md relative aspect-[4/3] hover:cursor-pointer select-none",
 										{ ["border-yellow/100"]: currentIndex === index }
 									)}
 								>

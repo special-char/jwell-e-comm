@@ -8,13 +8,7 @@ type Props = {
 };
 
 const page = ({ params }: Props) => {
-	return (
-		<div>
-			product details page product id:{" "}
-			<span className="text-rose-500">{params.handle}</span>
-			<ProductOverview handle={params.handle} />
-		</div>
-	);
+	return <ProductOverview handle={params.handle} />;
 };
 
 export default page;
