@@ -1,5 +1,5 @@
 import Button from "@/components/common/Button";
-import React from "react";
+import BagIcon from "@/public/icons/bag.svg";
 
 type Props = {};
 
@@ -9,9 +9,10 @@ const AddToCartBtn = (props: Props) => {
 			type="submit"
 			variant="fill"
 			color="green"
-			className={"!rounded-md"}
+			className={"!rounded-md text-white"}
 		>
-			Add to bag
+			<BagIcon className="w-5 aspect-square" />
+			<span>Add to bag</span>
 		</Button>
 	);
 };

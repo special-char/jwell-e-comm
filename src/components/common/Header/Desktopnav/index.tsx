@@ -1,12 +1,11 @@
 "use client";
 import Link from "next/link";
-import Button from "../../Button";
-import UserIcon from "@/public/icons/user.svg";
 import CartIcon from "@/public/icons/cart.svg";
 import style from "./desktopnav.module.css";
 import { DesktopNavType } from "@/utils/types";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
+import AccountBtn from "../AccountBtn";
 
 const DesktopNav = ({ data }: DesktopNavType) => {
 	const pathname = usePathname();
@@ -38,14 +37,15 @@ const DesktopNav = ({ data }: DesktopNavType) => {
 						})}
 				</div>
 				<div className={style.icons}>
-					<Button variant="icon">
+					{/* <Link href={"/account"}>
 						<span className="sr-only">user account button</span>
 						<UserIcon className="h-5" />
-					</Button>
-					<Button variant="icon">
+					</Link> */}
+					<AccountBtn />
+					<Link href={"/cart"}>
 						<span className="sr-only">go to cart button</span>
 						<CartIcon className="h-5" />
-					</Button>
+					</Link>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,7 @@ import AddToCartBtn from "../AddToCartBtn";
 const ProductDetails = ({ data }: ProductCardType) => {
 	return (
 		<div className="flex flex-col justify-between gap-4">
-			<h3 className="font-bold">{data.productName}</h3>
+			<h3 className="font-bold max-md:hidden">{data.productName}</h3>
 			<p className="text-gray">{data.productDescription}</p>
 
 			<h6 className="font-bold">{data.productPrice}</h6>

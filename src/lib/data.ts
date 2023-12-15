@@ -531,6 +531,41 @@ export const products = [
 		rating: 3,
 	},
 ];
+
+export const productReviews = [
+	{
+		id: 1,
+		name: "Tomas Doe",
+		image: "/images/person-1.png",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
+		rating: 4,
+	},
+	{
+		id: 2,
+		name: "Tomas Doe",
+		image: "/images/person-1.png",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
+		rating: 5,
+	},
+	{
+		id: 3,
+		name: "Tomas Doe",
+		image: "/images/person-1.png",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
+		rating: 4,
+	},
+	{
+		id: 4,
+		name: "Tomas Doe",
+		image: "/images/person-1.png",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
+		rating: 3,
+	},
+];
 //-------------------------------------ABOUT US -------------------------------------------//
 
 export const aboutUsPageBanner = {

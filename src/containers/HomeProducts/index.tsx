@@ -17,7 +17,7 @@ const HomeProducts = (props: Props) => {
 			</div>
 			<div className="grid md:grid-cols-3 grid-cols-1 gap-4">
 				{products.slice(0, 3).map((product, index) => (
-					<Link key={index} href={`/products/${product.handle}`}>
+					<Link key={index} href={`/products/${product.handle}`} scroll={false}>
 						<ProductCard data={product} />
 					</Link>
 				))}
