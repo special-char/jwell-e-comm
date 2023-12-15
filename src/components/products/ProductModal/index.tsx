@@ -1,11 +1,9 @@
-import Modal from "@/components/common/Model/index";
 import Image from "next/image";
 import StarIcon from "@/public/icons/star.svg";
-import Button from "@/components/common/Button";
 import clsx from "clsx";
-import Link from "next/link";
 import { ProductCardType } from "@/utils/types";
 import AddToCartBtn from "../AddToCartBtn";
+import Modal from "@/components/common/Modal";
 
 const ProductModal = ({ data }: ProductCardType) => {
 	return (
@@ -44,7 +42,7 @@ const ProductModal = ({ data }: ProductCardType) => {
 
 					<AddToCartBtn />
 					<a
-						href={`/products/${data.id}`}
+						href={`/products/${data.handle}`}
 						className="text-blue-500 text-center"
 					>
 						view more

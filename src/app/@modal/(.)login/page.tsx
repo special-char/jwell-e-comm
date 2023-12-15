@@ -1,4 +1,4 @@
-import Modal from "@/components/common/Model";
+import Modal from "@/components/common/Modal";
 
 type Props = {};
 

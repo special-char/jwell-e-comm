@@ -280,6 +280,7 @@ export const shopPageBanner = {
 export const products = [
 	{
 		id: 1,
+		handle: "product-1",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product1.png",
@@ -307,6 +308,7 @@ export const products = [
 	},
 	{
 		id: 2,
+		handle: "product-2",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product2.png",
@@ -334,6 +336,7 @@ export const products = [
 	},
 	{
 		id: 3,
+		handle: "product-3",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product3.png",
@@ -361,6 +364,7 @@ export const products = [
 	},
 	{
 		id: 4,
+		handle: "product-4",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product1.png",
@@ -388,6 +392,7 @@ export const products = [
 	},
 	{
 		id: 5,
+		handle: "product-5",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product2.png",
@@ -415,6 +420,7 @@ export const products = [
 	},
 	{
 		id: 6,
+		handle: "product-6",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product3.png",
@@ -442,6 +448,7 @@ export const products = [
 	},
 	{
 		id: 7,
+		handle: "product-7",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product1.png",
@@ -469,6 +476,7 @@ export const products = [
 	},
 	{
 		id: 8,
+		handle: "product-8",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product2.png",
@@ -496,6 +504,7 @@ export const products = [
 	},
 	{
 		id: 9,
+		handle: "product-9",
 		productThumbnail: {
 			id: 0,
 			url: "/images/product3.png",

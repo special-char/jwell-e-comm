@@ -2,6 +2,7 @@ import React from "react";
 import { topProduct, products } from "@/lib/data";
 import Button from "@/components/common/Button";
 import ProductCard from "@/components/ProductCard";
+import Link from "next/link";
 type Props = {};
 
 const HomeProducts = (props: Props) => {
@@ -16,7 +17,9 @@ const HomeProducts = (props: Props) => {
 			</div>
 			<div className="grid md:grid-cols-3 grid-cols-1 gap-4">
 				{products.slice(0, 3).map((product, index) => (
-					<ProductCard key={index} data={product} />
+					<Link key={index} href={`/products/${product.handle}`}>
+						<ProductCard data={product} />
+					</Link>
 				))}
 			</div>
 		</section>
