@@ -4,6 +4,7 @@ import styles from "./newsLetter.module.css";
 import Input from "../common/Input";
 import { footerData } from "@/lib/data";
 import SubmitButton from "../common/SubmitButton";
+import { z } from "zod";
 
 type Props = {};
 
@@ -11,10 +12,37 @@ const NewsLetter = (props: Props) => {
 	async function subscribeToNewsletter(formData: FormData) {
 		"use server";
 
-		const rawFormData = {
+		const schema = z.object({
+			email: z
+				.string({
+					invalid_type_error: "Invalid email",
+				})
+				.min(1, { message: "This field has to be filled." })
+				.email("This is not a valid email.")
+				.refine(
+					(e) => e === "jk@test.com",
+					"This email is not in our database"
+				),
+			name: z
+				.string({
+					invalid_type_error: "Invalid name",
+				})
+				.min(4, { message: "min 4 char required.." })
+				.max(6, { message: "min 6 char valid.." }),
+		});
+
+		const validatedFields = schema.safeParse({
 			name: formData.get("name"),
 			email: formData.get("email"),
-		};
+		});
+
+		if (!validatedFields.success) {
+			console.log(validatedFields.error.flatten().fieldErrors);
+
+			return {
+				errors: validatedFields.error.flatten().fieldErrors,
+			};
+		}
 
 		await new Promise((resolve, reject) => {
 			setTimeout(() => {
@@ -22,11 +50,17 @@ const NewsLetter = (props: Props) => {
 			}, 3000);
 		});
 
-		console.log("formdata", rawFormData);
+		console.log("formdata", validatedFields);
+
+		return {
+			message: "validated",
+			formData: validatedFields,
+		};
 
 		// mutate data
 		// revalidate cache
 	}
+
 	return (
 		<section>
 			<div className={styles.newsLetterHeadingWrapper}>
@@ -38,6 +72,7 @@ const NewsLetter = (props: Props) => {
 			<form className={styles.newsLetterForm} action={subscribeToNewsletter}>
 				<Input name="name" placeholder="Enter your name" />
 				<Input name="email" placeholder="Enter your email" type="email" />
+
 				<SubmitButton
 					variant="fill"
 					color="green"

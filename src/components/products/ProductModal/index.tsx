@@ -1,15 +1,13 @@
-// "use client";
-
 import Image from "next/image";
 import { ProductCardType } from "@/utils/types";
 import AddToCartBtn from "../AddToCartBtn";
 import Modal from "@/components/common/Modal";
 import Rating from "../Rating";
 import { usePathname, useRouter } from "next/navigation";
+import { revalidatePath } from "next/cache";
+import Link from "next/link";
 
 const ProductModal = ({ data }: ProductCardType) => {
-	// const router = useRouter();
-	// const pathname = usePathname();
 	return (
 		<Modal>
 			<div className="grid w-full grid-cols-1 sm:grid-cols-2 rounded-md">
@@ -30,15 +28,7 @@ const ProductModal = ({ data }: ProductCardType) => {
 					<Rating rating={data.rating} reviewCount={data.reviewCount} />
 
 					<AddToCartBtn />
-					{/* <button
-						type="button"
-						onClick={() => {
-							router.back();
-							router.replace(`/store/${data.handle}`);
-						}}
-					>
-						View More
-					</button> */}
+					<a href={`/products/${data.handle}`}>view</a>
 				</div>
 			</div>
 		</Modal>
