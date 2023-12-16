@@ -18,7 +18,7 @@ const SidePanel = ({ children, side = "left" }: Props) => {
 	}, [router]);
 
 	return (
-		<Dialog as="div" open className="relative z-10" onClose={onDismiss}>
+		<Dialog as="div" open className="relative z-50" onClose={onDismiss}>
 			<div className="fixed inset-0 bg-black/20 backdrop-blur-md transition-opacity" />
 
 			<div className="fixed inset-0 overflow-hidden">

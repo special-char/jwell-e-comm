@@ -42,7 +42,7 @@ const DesktopNav = ({ data }: DesktopNavType) => {
 						<UserIcon className="h-5" />
 					</Link> */}
 					<AccountBtn />
-					<Link href={"/cart"}>
+					<Link href={"/cart"} scroll={false}>
 						<span className="sr-only">go to cart button</span>
 						<CartIcon className="h-5" />
 					</Link>
