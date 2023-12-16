@@ -2,13 +2,16 @@ import React, { cloneElement, memo } from "react";
 import clsx from "clsx";
 import Styles from "./button.module.css";
 
-type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+type Props = {
 	prefix?: React.JSX.Element;
 	suffix?: React.JSX.Element;
 	className?: any;
 	title?: string;
-	as?: any;
 } & (
+	| (React.ButtonHTMLAttributes<HTMLButtonElement> & { as?: "button" })
+	| (React.AnchorHTMLAttributes<HTMLAnchorElement> & { as?: "a" })
+) &
+	(
 		| {
 				variant?: "fill";
 				color?: "green" | "yellow" | "black";

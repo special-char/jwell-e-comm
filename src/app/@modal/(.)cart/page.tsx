@@ -1,7 +1,8 @@
 import Button from "@/components/common/Button";
-import SidePanel from "@/components/common/sidePanel";
+import SidePanel from "@/components/common/SidePanel";
 import Image from "next/image";
-import { cartPage } from "@/lib/data";
+import { products } from "@/lib/data";
+import CartItem from "@/components/common/CartItem";
 
 type Props = {};
 
@@ -11,45 +12,8 @@ const Cart = (props: Props) => {
 			<div className="flex h-full flex-col overflow-y-scroll no-scrollbar">
 				<div className="flow-root overflow-hidden overflow-y-auto flex-1 no-scrollbar">
 					<ul role="list" className="divide-y divide-gray">
-						{cartPage &&
-							cartPage.cartProductList.map((item) => (
-								<li
-									key={item.id}
-									className="grid grid-cols-[30%_1fr] py-2 gap-4"
-								>
-									<div className="flex-shrink-0 overflow-hidden rounded-md border relative border-gray/30 aspect-square">
-										<Image
-											src={item.productImage}
-											alt={item.productName}
-											fill
-											style={{ objectFit: "contain" }}
-										/>
-									</div>
-
-									<div className="grid grid-cols-2 gap-2">
-										<div className="flex flex-col justify-between">
-											<p className="text-caption1 font-medium">
-												{item.productName}
-											</p>
-											<p className="text-gray/60 text-caption2">Qty 5</p>
-										</div>
-
-										<div className="flex flex-col justify-between items-end">
-											<div className="flex flex-col items-end">
-												<p className="font-semibold text-caption1">
-													₹ {item.productPrice}
-												</p>
-											</div>
-											<Button
-												variant="outlined"
-												className="font-medium text-red-500 hover:text-red-600 !border-none !p-0"
-											>
-												Remove
-											</Button>
-										</div>
-									</div>
-								</li>
-							))}
+						{products &&
+							products.map((item) => <CartItem key={item.id} data={item} />)}
 					</ul>
 				</div>
 
