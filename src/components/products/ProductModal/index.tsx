@@ -1,11 +1,11 @@
-import Modal from "@/components/common/Model/index";
 import Image from "next/image";
-import StarIcon from "@/public/icons/star.svg";
-import Button from "@/components/common/Button";
-import clsx from "clsx";
-import Link from "next/link";
 import { ProductCardType } from "@/utils/types";
 import AddToCartBtn from "../AddToCartBtn";
+import Modal from "@/components/common/Modal";
+import Rating from "../Rating";
+import { usePathname, useRouter } from "next/navigation";
+import { revalidatePath } from "next/cache";
+import Link from "next/link";
 
 const ProductModal = ({ data }: ProductCardType) => {
 	return (
@@ -25,30 +25,10 @@ const ProductModal = ({ data }: ProductCardType) => {
 
 					<h6 className="font-bold">{data.productPrice}</h6>
 
-					<div className="flex items-center gap-4">
-						<div className="flex">
-							{[0, 1, 2, 3, 4].map((rating) => (
-								<StarIcon
-									key={rating}
-									className={clsx("h-5 w-5 flex-shrink-0", {
-										["text-yellow"]: data.rating > rating,
-										["text-gray/20"]: data.rating <= rating,
-									})}
-									aria-hidden="true"
-								/>
-							))}
-						</div>
-
-						<p className="text-gray">{data.reviewCount} reviews</p>
-					</div>
+					<Rating rating={data.rating} reviewCount={data.reviewCount} />
 
 					<AddToCartBtn />
-					<a
-						href={`/products/${data.id}`}
-						className="text-blue-500 text-center"
-					>
-						view more
-					</a>
+					<a href={`/products/${data.handle}`}>view</a>
 				</div>
 			</div>
 		</Modal>

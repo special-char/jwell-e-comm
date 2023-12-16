@@ -37,16 +37,13 @@ const Input = ({
 					{label}
 				</label>
 			)}
-			<span className={clsx(style.inputWrapper)}>
-				<As
-					className={clsx(style.input, "peer/input", {
-						[style[`input--${color}`]]: !!color,
-						[className || ""]: !!className,
-					})}
-					name={name}
-					{...props}
-				/>
-			</span>
+			<As
+				className={clsx("peer/input", {
+					[className || ""]: !!className,
+				})}
+				name={name}
+				{...props}
+			/>
 		</div>
 	);
 };

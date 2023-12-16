@@ -189,7 +189,7 @@ const ProductOverviewImage = ({
 								<SwiperSlide
 									key={index}
 									className={clsx(
-										"bg-white box-border border-2 border-gray/20 inline-block rounded-md relative aspect-[4/3] hover:cursor-pointer select-none",
+										"bg-white box-border border-2 border-gray/20 inline-block rounded-xl relative aspect-[4/3] hover:cursor-pointer select-none",
 										{ ["border-yellow/100"]: currentIndex === index }
 									)}
 								>

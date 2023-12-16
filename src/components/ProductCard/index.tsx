@@ -1,9 +1,7 @@
-import React from "react";
 import { ProductCardType } from "@/utils/types";
 import Image from "next/image";
 import Styles from "./productCard.module.css";
-import Button from "../common/Button";
-import Plus from "@/public/icons/plus.svg";
+import AddToCartBtn from "../products/AddToCartBtn";
 
 const ProductCard = ({ data }: ProductCardType) => {
 	return (
@@ -23,10 +21,7 @@ const ProductCard = ({ data }: ProductCardType) => {
 				</div>
 			</div>
 			<div className={Styles.btnWrapper}>
-				<Button variant="round" color="black">
-					<span className="sr-only">add to card button</span>
-					<Plus className="h-4" />
-				</Button>
+				<AddToCartBtn varient="icon" />
 			</div>
 		</div>
 	);

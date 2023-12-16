@@ -54,7 +54,7 @@ const Button = ({
 					height: 24,
 					width: 24,
 				})}
-			<span className="flex items-center justify-center">{props.children}</span>
+			{props.children}
 			{Suffix &&
 				cloneElement(<Suffix />, {
 					height: 24,
