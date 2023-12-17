@@ -1,15 +1,17 @@
+import SignInWith from "@/components/SignInWith";
+import Button from "@/components/common/Button";
+import Input from "@/components/common/form/Input";
 import Link from "next/link";
-import Button from "../common/Button";
-import Input from "../common/form/Input";
-import SignInWith from "../SignInWith";
+import React from "react";
 
 type Props = {};
 
-const LoginForm = (props: Props) => {
-  async function login(formData: FormData) {
+const Register = (props: Props) => {
+  async function register(formData: FormData) {
     "use server";
 
     const rawFormData = {
+      name: formData.get("name"),
       email: formData.get("email"),
       password: formData.get("password"),
     };
@@ -20,18 +22,24 @@ const LoginForm = (props: Props) => {
     // revalidate cache
   }
   return (
-    <div className="flex flex-col w-full items-center gap-4">
-      <h4>Login</h4>
+    <section className="flex flex-col w-full items-center gap-4">
+      <h4>Register</h4>
       <div className="flex flex-col gap-2">
         <div className="flex gap-2 items-center">
-          <p className="text-subtitle2">Don&apos;t have an account ?</p>
+          <p className="text-subtitle2">Have an account ?</p>
           <span>
-            <Link className="text-blue-500" scroll={false} href={"/register"}>
-              Sign up
+            <Link className="text-blue-500" scroll={false} href={"/login"}>
+              Log in
             </Link>
           </span>
         </div>
-        <form action={login} className="flex flex-col gap-6 max-w-md">
+        <form action={register} className="flex flex-col gap-6 max-w-md">
+          <Input
+            name="name"
+            placeholder="Enter your name"
+            type="text"
+            label="Name"
+          />
           <Input
             name="email"
             placeholder="Enter your email"
@@ -45,22 +53,22 @@ const LoginForm = (props: Props) => {
             className="!rounded-xl"
             type="submit"
           >
-            Login
+            Sign Up
           </Button>
         </form>
         <div className="flex items-center">
           <span className="flex-1">
             <hr />
           </span>
-          <p className="text-subtitle2 px-4">Or Login with</p>
+          <p className="text-subtitle2 px-4">Or SignUp with</p>
           <span className="flex-1">
             <hr />
           </span>
         </div>
         <SignInWith />
       </div>
-    </div>
+    </section>
   );
 };
 
-export default LoginForm;
+export default Register;
