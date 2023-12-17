@@ -1,6 +1,7 @@
-import Input from "../../components/common/Input";
+import Input from "../../components/common/form/Input";
+import TextArea from "@/components/common/form/TextArea";
+import SubmitButton from "@/components/common/form/SubmitButton";
 import style from "./contactform.module.css";
-import SubmitButton from "@/components/common/SubmitButton";
 
 const ContactForm = () => {
 	async function contactFormSubmit(formData: FormData) {
@@ -31,8 +32,7 @@ const ContactForm = () => {
 					type="email"
 					wrapperClassName="col-span-2"
 				/>
-				<Input
-					as="textarea"
+				<TextArea
 					name="message"
 					label="Message"
 					rows={5}

@@ -1,25 +1,16 @@
-import React, { forwardRef, memo } from "react";
+import React, { memo } from "react";
 import style from "./input.module.css";
 import clsx from "clsx";
 
 type Props = {
 	name: string;
-	color?: "white";
 	className?: string;
 	wrapperClassName?: string;
 	label?: string;
-} & (
-	| (React.InputHTMLAttributes<HTMLInputElement> & {
-			as?: "input";
-	  })
-	| (React.TextareaHTMLAttributes<HTMLTextAreaElement> & {
-			as?: "textarea";
-	  })
-);
+} & React.InputHTMLAttributes<HTMLInputElement>;
+
 const Input = ({
-	as: As = "input",
 	name,
-	color,
 	label,
 	wrapperClassName,
 	className,
@@ -37,7 +28,7 @@ const Input = ({
 					{label}
 				</label>
 			)}
-			<As
+			<input
 				className={clsx("peer/input", {
 					[className || ""]: !!className,
 				})}

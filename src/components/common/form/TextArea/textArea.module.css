@@ -1,0 +1,9 @@
+.inputGroup {
+	& .label {
+		@apply font-semibold;
+
+		&.label_required {
+			@apply after:content-["*"];
+		}
+	}
+}

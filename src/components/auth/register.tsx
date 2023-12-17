@@ -1,5 +1,5 @@
 import Button from "../common/Button";
-import Input from "../common/Input";
+import Input from "../common/form/Input";
 
 type Props = {};
 

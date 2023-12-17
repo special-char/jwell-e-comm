@@ -2,7 +2,7 @@ import Button from "@/components/common/Button";
 import SidePanel from "@/components/common/SidePanel";
 import Image from "next/image";
 import { products } from "@/lib/data";
-import CartItem from "@/components/common/CartItem";
+import CartItem from "@/components/CartItem";
 
 type Props = {};
 
