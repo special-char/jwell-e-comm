@@ -1,5 +1,6 @@
 import Button from "@/components/common/Button";
-import Input from "@/components/common/Input";
+import Input from "@/components/common/form/Input";
+import TextArea from "@/components/common/form/TextArea";
 
 type Props = {};
 
@@ -17,12 +18,7 @@ const ProductReviewForm = (props: Props) => {
 	}
 	return (
 		<form action={submitReview} className="flex flex-col gap-6">
-			<Input
-				as="textarea"
-				name="revirew"
-				placeholder="Enter you Review"
-				rows={5}
-			/>
+			<TextArea name="revirew" placeholder="Enter you Review" rows={5} />
 			<Input name="name" placeholder="Enter your name" />
 			<Input name="email" placeholder="Enter your email" type="email" />
 			<Button

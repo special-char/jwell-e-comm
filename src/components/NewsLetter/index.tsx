@@ -1,9 +1,9 @@
 import SendIcon from "@/public/icons/send.svg";
 import MailIcon from "@/public/icons/envelope-outline.svg";
 import styles from "./newsLetter.module.css";
-import Input from "../common/Input";
+import Input from "../common/form/Input";
 import { footerData } from "@/lib/data";
-import SubmitButton from "../common/SubmitButton";
+import SubmitButton from "../common/form/SubmitButton";
 import { z } from "zod";
 
 type Props = {};

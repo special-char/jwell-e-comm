@@ -1,6 +1,6 @@
 import React, { cloneElement, memo } from "react";
 import clsx from "clsx";
-import Styles from "./button.module.css";
+import styles from "./button.module.css";
 
 type Props = {
 	prefix?: React.JSX.Element;
@@ -42,11 +42,11 @@ const Button = ({
 	return (
 		<As
 			className={clsx(
-				Styles.btn,
+				styles.btn,
 				{
-					[Styles[`btn--fill`]]: variant === "fill",
-					[Styles[`btn--${variant}`]]: !!variant,
-					[Styles[`btn--${color}`]]: !!color,
+					[styles[`btn--fill`]]: variant === "fill",
+					[styles[`btn--${variant}`]]: !!variant,
+					[styles[`btn--${color}`]]: !!color,
 				},
 				className
 			)}

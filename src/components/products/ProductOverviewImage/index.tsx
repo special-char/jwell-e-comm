@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 "use client";
 import { memo, useEffect, useRef, useState } from "react";
 import clsx from "clsx";

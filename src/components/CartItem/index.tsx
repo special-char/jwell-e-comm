@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../common/Button";
 import { ProductCardType } from "@/utils/types";
 import Image from "next/image";
 
