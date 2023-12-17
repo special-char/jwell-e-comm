@@ -16,7 +16,7 @@ const Modal = ({ children }: Props) => {
 	}, [router]);
 
 	return (
-		<Dialog as="div" open className="fixed inset-0 z-10" onClose={onDismiss}>
+		<Dialog as="div" open className="fixed inset-0 z-50" onClose={onDismiss}>
 			<div className="fixed inset-0 hidden bg-black/20 backdrop-blur-md transition-opacity md:block" />
 
 			<div className="fixed inset-0 z-10 w-screen overflow-y-auto">
