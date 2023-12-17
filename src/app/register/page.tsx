@@ -1,5 +1,5 @@
-import SiginWith from "@/components/SignInWith";
-import LoginForm from "@/components/auth/login";
+import SignInWith from "@/components/SignInWith";
+import RegisterForm from "@/components/auth/register";
 import Button from "@/components/common/Button";
 import Input from "@/components/common/form/Input";
 import Link from "next/link";
@@ -7,11 +7,12 @@ import React from "react";
 
 type Props = {};
 
-const Login = (props: Props) => {
-	async function login(formData: FormData) {
+const Register = (props: Props) => {
+	async function register(formData: FormData) {
 		"use server";
 
 		const rawFormData = {
+			name: formData.get("name"),
 			email: formData.get("email"),
 			password: formData.get("password"),
 		};
@@ -23,9 +24,9 @@ const Login = (props: Props) => {
 	}
 	return (
 		<section className="flex flex-col w-full items-center gap-4">
-			<LoginForm />
+			<RegisterForm />
 		</section>
 	);
 };
 
-export default Login;
+export default Register;
