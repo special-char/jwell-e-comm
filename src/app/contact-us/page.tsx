@@ -6,12 +6,12 @@ import React from "react";
 type Props = {};
 
 const page = (props: Props) => {
-  return (
-    <>
-      <ContactUsBanner />
-      <Contact />
-    </>
-  );
+	return (
+		<>
+			<ContactUsBanner />
+			<Contact />
+		</>
+	);
 };
 
 export default page;

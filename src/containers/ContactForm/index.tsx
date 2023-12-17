@@ -1,7 +1,6 @@
-import React from "react";
 import Input from "../../components/common/Input";
-import Button from "../../components/common/Button";
 import style from "./contactform.module.css";
+import SubmitButton from "@/components/common/SubmitButton";
 
 const ContactForm = () => {
 	async function contactFormSubmit(formData: FormData) {
@@ -33,7 +32,7 @@ const ContactForm = () => {
 					wrapperClassName="col-span-2"
 				/>
 				<Input
-					// as="textarea"
+					as="textarea"
 					name="message"
 					label="Message"
 					rows={5}
@@ -41,9 +40,14 @@ const ContactForm = () => {
 				/>
 			</div>
 			<div>
-				<Button variant="fill" color="black" title="send message">
+				<SubmitButton
+					variant="fill"
+					color="green"
+					title="send message"
+					className="!rounded-xl"
+				>
 					Send Message
-				</Button>
+				</SubmitButton>
 			</div>
 		</form>
 	);

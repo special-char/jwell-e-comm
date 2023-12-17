@@ -72,7 +72,7 @@ export type ServiceCardType = {
 export type ContactDetailType = {
 	data: {
 		id: number;
-		icon: string;
+		icon: any;
 		description: string;
 	};
 };
