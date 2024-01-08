@@ -1,3 +1,5 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 export type DesktopNavType = {
 	data: {
 		heading1: string;
@@ -44,6 +46,7 @@ export type testimonialCardType = {
 
 export type ProductCardType = {
 	data: {
+		productImage: string | StaticImport;
 		id: number;
 		handle: string;
 		productThumbnail: {

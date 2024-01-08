@@ -1,16 +1,12 @@
-import React from "react";
-import WhyChooseUs from "@/containers/WhyChooseUs";
-import AboutUsBanner from "@/containers/AboutUsBanner";
-import TestimonialCarousel from "@/containers/TestimonialCarousel";
+import About from '@/containers/aboutus'
+import React from 'react'
 
-const page = () => {
-	return (
-		<>
-			<AboutUsBanner />
-			<WhyChooseUs />
-			<TestimonialCarousel />
-		</>
-	);
-};
+type Props = {}
 
-export default page;
+const AboutPage = (props: Props) => {
+  return (
+    <div><About/></div>
+  )
+}
+
+export default AboutPage

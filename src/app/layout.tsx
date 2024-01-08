@@ -29,14 +29,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.variable} relative font-sans`}>
-				<div>
 				<Header />
 				{children}
+				{modal}
+				{menu}
 				<Footer />
-				</div>
-				
-				<main/>
-				
 			</body>
 		</html>
 	);
