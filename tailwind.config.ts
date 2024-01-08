@@ -21,6 +21,7 @@ const config: Config = {
 				offwhite: "rgba(var(--color-offwhite) / <alpha-value>)",
 				white: "rgba(var(--color-white) / <alpha-value>)",
 				greenLight: "rgba(var(--color-green-light) / <alpha-value>)",
+				
 			},
 			fontSize: {
 				heading1: [

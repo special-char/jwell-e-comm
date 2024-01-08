@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/common/Header";
-import Footer from "@/components/common/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 
 const inter = Inter({
 	style: ["normal"],
@@ -28,10 +29,14 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.variable} relative font-sans`}>
+				<div>
 				<Header />
 				{children}
-				{modal}
 				<Footer />
+				</div>
+				
+				<main/>
+				
 			</body>
 		</html>
 	);
