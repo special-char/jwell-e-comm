@@ -1,15 +1,12 @@
-import ContactUsBanner from "@/containers/ContactUsBanner";
-import ContactUsSection from "@/containers/ContactUsSection";
+import Contact from '@/containers/Contactus'
+import React from 'react'
 
-type Props = {};
+type Props = {}
 
-const page = (props: Props) => {
-	return (
-		<>
-			<ContactUsBanner />
-			<ContactUsSection />
-		</>
-	);
-};
+const contactuspage = (props: Props) => {
+  return (
+    <div><Contact/></div>
+  )
+}
 
-export default page;
+export default contactuspage

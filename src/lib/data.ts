@@ -19,7 +19,7 @@ export const navbarData = {
 		{
 			id: 2,
 			title: "Shop",
-			url: "/products",
+			url: "/shop",
 		},
 		{
 			id: 3,
@@ -30,6 +30,11 @@ export const navbarData = {
 			id: 4,
 			title: "Contact us",
 			url: "/contact-us",
+		},
+		{
+			id: 5,
+			title: "Blog",
+			url: "/blog-page",
 		},
 	],
 };
@@ -153,11 +158,11 @@ export const testimonialData = {
 //-------------------------------FOOTER-------------------------------//
 
 export const footerData = {
-	footerImage: "/images/footerImage.png",
+	footerImage: "/images/ringimage.webp",
 	newsLetter: {
 		heading: "Subscribe to Newsletter",
 	},
-	heading: "Furni.",
+	heading: "Jwellary",
 	description:
 		"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant",
 	socialMedia: [

@@ -1,15 +1,18 @@
-import HomeBanner from "@/containers/HomeBanner";
-import WhyChooseUs from "@/containers/WhyChooseUs";
-import TestimonialCarousel from "@/containers/TestimonialCarousel";
-import HomeProducts from "@/containers/HomeProducts";
+import Carousel from "@/components/carousel";
+import Sale from "@/components/salebanner";
+
+
 
 export default function Home() {
 	return (
-		<main>
-			<HomeBanner />
-			<HomeProducts />
-			<WhyChooseUs />
-			<TestimonialCarousel />
-		</main>
+		
+		<>
+	
+		<Carousel/>
+		<Sale/>
+		
+		
+		</>
+				
 	);
 }

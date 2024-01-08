@@ -16,14 +16,15 @@ const DesktopNav = ({ data }: DesktopNavType) => {
         <h1 className={style.heading1}>{data.heading1}</h1>
         <h1 className={style.heading2}>{data.heading2}</h1>
       </Link>
-      <div className={style.contentWrapper}>
-        <div className={style.navLinks}>
+     <div className={style.contentWrapper}> 
+         <div className={style.navLinks}>
           {data &&
             data.navLinks.map((item) => {
               return (
-                // <Link href={item.url} key={item.id} className={style.title}>
-                //   {item.title}
-                // </Link>
+                <>
+                {/* <Link href={item.url} key={item.id} className={style.title}>
+                  {item.title}
+                </Link>  */}
                 <Link
                   href={item.url}
                   key={item.id}
@@ -31,8 +32,9 @@ const DesktopNav = ({ data }: DesktopNavType) => {
                     [style.active]: pathname === item.url,
                   })}
                 >
-                  {item.title}
-                </Link>
+                    {item.title}
+                  </Link>
+                  </>
               );
             })}
         </div>
@@ -47,9 +49,9 @@ const DesktopNav = ({ data }: DesktopNavType) => {
             <CartIcon className="h-5" />
           </Link>
         </div>
-      </div>
-    </div>
-  );
+        </div>
+        </div>
+  )
 };
 
 export default DesktopNav;

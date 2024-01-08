@@ -1,15 +1,16 @@
 import Link from "next/link";
-import SignInWith from "../../components/auth/SignInWith";
-import Input from "../../components/common/formElements/Input";
-import SubmitButton from "../../components/common/formElements/SubmitButton";
+import SignInWith from "@/components/auth/SignInWith";
+import SubmitButton from "@/components/common/formElements/SubmitButton";
+import Input from "@/components/common/formElements/Input";
 
 type Props = {};
 
-const LoginForm = (props: Props) => {
-	async function login(formData: FormData) {
+const RegisterForm = (props: Props) => {
+	async function register(formData: FormData) {
 		"use server";
 
 		const rawFormData = {
+			name: formData.get("name"),
 			email: formData.get("email"),
 			password: formData.get("password"),
 		};
@@ -22,17 +23,23 @@ const LoginForm = (props: Props) => {
 
 	return (
 		<div className="flex flex-col w-full items-center gap-4">
-			<h4>Login</h4>
+			<h4>Register</h4>
 			<div className="flex flex-col gap-2">
 				<div className="flex gap-2 items-center">
-					<p className="text-subtitle2">Don&apos;t have an account ?</p>
+					<p className="text-subtitle2">Have an account ?</p>
 					<span>
-						<Link className="text-blue-500" scroll={false} href={"/register"}>
-							Sign up
+						<Link className="text-blue-500" scroll={false} href={"/login"}>
+							Log in
 						</Link>
 					</span>
 				</div>
-				<form action={login} className="flex flex-col gap-6 max-w-md">
+				<form action={register} className="flex flex-col gap-6 max-w-md">
+					<Input
+						name="name"
+						placeholder="Enter your name"
+						type="text"
+						label="Name"
+					/>
 					<Input
 						name="email"
 						placeholder="Enter your email"
@@ -46,14 +53,14 @@ const LoginForm = (props: Props) => {
 						className="!rounded-xl"
 						type="submit"
 					>
-						Login
+						Sign Up
 					</SubmitButton>
 				</form>
 				<div className="flex items-center">
 					<span className="flex-1">
 						<hr />
 					</span>
-					<p className="text-subtitle2 px-4">Or Login with</p>
+					<p className="text-subtitle2 px-4">Or SignUp with</p>
 					<span className="flex-1">
 						<hr />
 					</span>
@@ -64,4 +71,4 @@ const LoginForm = (props: Props) => {
 	);
 };
 
-export default LoginForm;
+export default RegisterForm;
