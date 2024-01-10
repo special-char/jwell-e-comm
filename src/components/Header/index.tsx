@@ -61,27 +61,27 @@ export default function Navbar() {
   const navlinks = [
     {
       labe: "Home",
-      link: "#"
+      link: "/"
     },
     {
       labe: "About",
-      link: "../../app/about/about.tsx"
+      link: "/about-us"
     },
     {
       labe: "Shop",
-      link: "#"
+      link: "/shop"
     },
-    {
-        labe: "Pages",
-        link: "#"
-    },
+    // {
+    //     labe: "Pages",
+    //     link: "#"
+    // },
     {
         labe: "Blog",
-        link: "/Blog"
+        link: "/blog"
     },
     {
       labe: "Contact",
-      link: "/Contact"
+      link: "/contact"
     }
   ];
 
@@ -138,10 +138,10 @@ export default function Navbar() {
             type="text"
             placeholder="Search here..."
           />
-          <CiSearch
+          {/* <CiSearch
             className="absolute right-0 top-0 mr-3 mt-2.5 text-gray-400  cursor-pointer"
             size={25}
-          />
+          /> */}
         </section>
           <Link href={"#"} >
           <FaOpencart className="text-2xl cursor-pointer" />
