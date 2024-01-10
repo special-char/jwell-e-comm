@@ -8,8 +8,8 @@ import Phone from "@/public/icons/phone.svg";
 
 //----------------------------NAVBAR----------------------------------//
 export const navbarData = {
-	heading1: "Bea You",
-	heading2: ".",
+	heading1: "",
+	heading2: "",
 	navLinks: [
 		{
 			id: 1,

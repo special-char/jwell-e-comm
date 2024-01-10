@@ -80,7 +80,7 @@ const LoginForm = (props: Props) => {
           </div>
           <p className="text-sm text-center mb-6">
             Don't have an account{' '}
-            <a href="#" className="font-semibold hover:underline ml-1 whitespace-nowrap text-indigo-800">
+            <a href="/account" className="font-semibold hover:underline ml-1 whitespace-nowrap text-indigo-800">
               Register here
             </a>
           </p>
