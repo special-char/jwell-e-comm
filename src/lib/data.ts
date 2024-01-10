@@ -92,38 +92,38 @@ export const whyChooseUs = {
 	],
 };
 
-// export const help = {
-//   image1: "",
-//   image2: "",
-//   image3: "",
-//   heading: "We Help You Make Modern Interior Design",
-//   description:
-//     "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada",
-//   icon: "",
-//   points: [
-//     {
-//       id: 1,
+export const help = {
+  image1: "",
+  image2: "",
+  image3: "",
+  heading: "We Help You Make Modern Interior Design",
+  description:
+    "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada",
+  icon: "",
+  points: [
+    {
+      id: 1,
 
-//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-//     },
-//     {
-//       id: 2,
+      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+    },
+    {
+      id: 2,
 
-//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-//     },
-//     {
-//       id: 3,
+      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+    },
+    {
+      id: 3,
 
-//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-//     },
-//     {
-//       id: 4,
+      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+    },
+    {
+      id: 4,
 
-//       pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
-//     },
-//   ],
-//   actionBtn1: "",
-// };
+      pointDescription: "Donec vitae odio quis nisl dapibus malesuada",
+    },
+  ],
+  actionBtn1: "",
+};
 
 export const testimonialData = {
 	heading: "Testimonials",
@@ -192,30 +192,35 @@ export const footerData = {
 			{
 				id: 1,
 				title: "About us",
-				url: "/",
+				url: "/about-us",
 			},
 			{
 				id: 2,
-				title: "Service",
-				url: "/",
+				title: "Shop",
+				url: "/shop",
 			},
 
 			{
 				id: 3,
 				title: "Contact us",
-				url: "/",
+				url: "/contact-us",
+			},
+			{
+				id: 4,
+				title: "Blog",
+				url: "blog-page",
 			},
 		],
 		[
 			{
 				id: 1,
 				title: "Support",
-				url: "/",
+				url: "contact-us",
 			},
 			{
 				id: 2,
 				title: "Knowledge base",
-				url: "/",
+				url: "blog-page",
 			},
 		],
 		[

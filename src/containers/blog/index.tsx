@@ -1,78 +1,43 @@
-"use client"
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React from 'react'
 
-const Blog = () => {
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'Lorem Ipsum Dolor',
-      imageUrl: '/images/blogimage1.webp',
-      shortContent: 'The most popular color is yellow which is made by adding silver and some copper. The metals are melted together to form an alloy of the desired color and karat.',
-      fullContent: 'The weight of evidence strongly supports a theme of healthful eating while allowing for variations on that theme. A diet of minimally processed foods close to nature, predominantly plants, is decisively associated with health promotion and disease prevention and is consistent with the salient components of seemingly distinct dietary approaches. Efforts to improve public health through diet are forestalled not for want of knowledge about the optimal feeding of Homo sapiens but for distractions associated with exaggerated claims, and our failure to convert what we reliably know into what we routinely do.',
-    },
-    {
-      id: 2,
-      title: 'Lorem Ipsum Dolor',
-      imageUrl: '/images/blogimage2.webp',
-      shortContent: 'Short content of the blog post goes here...',
-      fullContent: 'The weight of evidence strongly supports a theme of healthful eating while allowing for variations on that theme. A diet of minimally processed foods close to nature, predominantly plants, is decisively associated with health promotion and disease prevention and is consistent with the salient components of seemingly distinct dietary approaches. Efforts to improve public health through diet are forestalled not for want of knowledge about the optimal feeding of Homo sapiens but for distractions associated with exaggerated claims, and our failure to convert what we reliably know into what we routinely do.',
-    },
-    {
-      id: 3,
-      title: 'Lorem Ipsum Dolor',
-      imageUrl: '/images/blogimage3.webp',
-      shortContent: 'Short content of the blog post goes here...',
-      fullContent: 'FThe weight of evidence strongly supports a theme of healthful eating while allowing for variations on that theme. A diet of minimally processed foods close to nature, predominantly plants, is decisively associated with health promotion and disease prevention and is consistent with the salient components of seemingly distinct dietary approaches. Efforts to improve public health through diet are forestalled not for want of knowledge about the optimal feeding of Homo sapiens but for distractions associated with exaggerated claims, and our failure to convert what we reliably know into what we routinely do.',
-    },
-  ];
+type Props = {}
 
-  const [expandedPosts, setExpandedPosts] = useState({});
-
-  const toggleContent = (postId) => {
-    setExpandedPosts((prevExpandedPosts) => ({
-      ...prevExpandedPosts,
-      [postId]: !prevExpandedPosts[postId],
-    }));
-  };
-
+const Blog = (props: Props) => {
   return (
-    <div className="bg-gray-100 md:px-10 px-4 py-12 font-[sans-serif]">
-      <div className="max-md:max-w-lg mx-auto">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-10">Blog Page</h2>
+    <div>
+      <div className="bg-gray-100 md:px-10 px-4 py-12 font-[sans-serif]">
+      <div className="max-md:max-w-lg px-container">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-10">Latest Blog Posts</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.map((post) => (
-            <div
-              key={post.id}
-              className="bg-gradient-to-b from-indigo-800 to-indigo-600 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
-            >
-              <Image
-                src={post.imageUrl}
-                alt={`Blog Post ${post.id}`}
-                width={500}
-                height={300}
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2">{post.title}</h3>
-                {expandedPosts[post.id] ? (
-                  <p className="text-sm opacity-75 mb-4">{post.fullContent}</p>
-                ) : (
-                  <p className="text-sm opacity-75 mb-4">{post.shortContent}</p>
-                )}
-                <button
-                  onClick={() => toggleContent(post.id)}
-                  className="inline-block text-blue-200 text-sm hover:underline focus:outline-none"
-                >
-                  {expandedPosts[post.id] ? 'Read Less' : 'Read More'}
-                </button>
-              </div>
+          <div className="bg-gradient-to-b from-indigo-800 to-indigo-600 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <img sizes="(min-width: 768px) 100vw, (max-width: 910px) min(100%, 870px), (max-height: 785px) min(100%, 870px), (min-aspect-ratio: 5184/3456) calc((calc(100vh - 205px)) * 1.5), calc(100vw - 40px)" srcset="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 870w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=1170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1170w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1470w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1740w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=1770&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1770w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2070w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=2340&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2340w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=2370&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2370w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2670w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2940w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2970w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=3270&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3270w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=3540&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3540w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=3570&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3570w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=3870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3870w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=4140&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4140w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=4170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4170w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=4470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4470w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=4740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4740w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=4770&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4770w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=5070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5070w, https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=5184&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5184w" src="https://images.unsplash.com/photo-1531995811006-35cb42e1a022?q=80&amp;w=1000&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="woman wearing gold-colored ring pendant necklaces" class="tB6UZ a5VGX"  alt="Blog Post 1" className="w-full h-64 object-cover" />
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold mb-2">Lorem Ipsum Dolor</h3>
+              <p className="text-sm opacity-75">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</p>
+              <a href="javascript:void(0);" className="mt-4 inline-block text-blue-200 text-sm hover:underline">Read More</a>
             </div>
-          ))}
+          </div>
+          <div className="bg-gradient-to-b from-purple-800 to-purple-600 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <img sizes="(min-width: 768px) 100vw, (max-width: 910px) min(100%, 870px), (max-height: 785px) min(100%, 870px), (min-aspect-ratio: 6000/4000) calc((calc(100vh - 205px)) * 1.5), calc(100vw - 40px)" srcset="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 870w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=1170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1170w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1470w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1740w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=1770&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 1770w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2070w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=2340&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2340w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=2370&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2370w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=2670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2670w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2940w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=2970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 2970w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=3270&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3270w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=3540&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3540w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=3570&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3570w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=3870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 3870w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=4140&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4140w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=4170&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4170w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=4470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4470w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=4740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4740w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=4770&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 4770w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=5070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5070w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=5340&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5340w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=5370&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5370w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=5670&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5670w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=5940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5940w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=5970&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 5970w, https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=6000&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D 6000w" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&amp;w=1000&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="man and woman holding hands" class="tB6UZ a5VGX" alt="Blog Post 2" className="w-full h-64 object-cover" />
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold mb-2">Consectetur Adipiscing</h3>
+              <p className="text-sm opacity-75">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</p>
+              <a href="javascript:void(0);" className="mt-4 inline-block text-pink-200 text-sm hover:underline">Read More</a>
+            </div>
+          </div>
+          <div className="bg-gradient-to-b from-indigo-800 to-indigo-600 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <img alt="a group of earrings" srcset="https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=100&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 100w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=200&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 200w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=300&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 300w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=400&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 400w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 500w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 600w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=700&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 700w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=800&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 800w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=900&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 900w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=1000&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 1000w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=1200&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 1200w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=1400&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 1400w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=1600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 1600w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=1800&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 1800w, https://images.unsplash.com/photo-1665159882377-385d68d2bdff?w=2000&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D 2000w" src="https://images.unsplash.com/photo-1665159882377-385d68d2bdff?q=80&amp;w=1000&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D" sizes="(min-width: 1335px) 418.6666666666667px, (min-width: 992px) calc(calc(100vw - 64px) / 3), (min-width: 768px) calc(calc(100vw - 52px) / 2), calc(calc(100vw - 52px) / 2)" itemprop="thumbnailUrl" data-perf="eager-loaded-img" class="tB6UZ a5VGX" data-test="photo-grid-masonry-img"  alt="Blog Post 3" className="w-full h-64 object-cover" />
+            <div className="p-6">
+              <h3 className="text-2xl font-semibold mb-2">Lorem Ipsum Sit Amet</h3>
+              <p className="text-sm opacity-75">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore...</p>
+              <a href="javascript:void(0);" className="mt-4 inline-block text-green-200 text-sm hover:underline">Read More</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Blog;
+export default Blog

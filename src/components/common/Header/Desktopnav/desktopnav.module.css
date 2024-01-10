@@ -20,7 +20,7 @@
 
         &::before {
           content: "";
-          @apply absolute h-[3px] w-0 left-0 bottom-0 bg-yellow duration-300;
+          @apply absolute h-[3px] w-0 left-0 bottom-0 bg-offwhite duration-300;
         }
 
         &:hover::before {
