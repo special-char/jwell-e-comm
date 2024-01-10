@@ -90,7 +90,7 @@ export default function Navbar() {
       <nav className="flex justify-between px-8 items-center py-6  ">
         <div className="flex items-center gap-8">
           <section className="flex items-center gap-4">
-            {/* menu */}
+            {/* menu */}    
             <TbMenuDeep
               onClick={() => setMenu(true)}
               className="text-2xl cursor-pointer lg:hidden"
