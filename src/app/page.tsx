@@ -1,39 +1,32 @@
-import Header from "@/components/Header";
-import NewArrival from "@/components/NewArrivals";
-import ProductCard from "@/components/ProductCard";
+import Divider from "@/components/bannner2";
 import Carousel from "@/components/carousel";
-import Salebanner from "@/components/salebanner";
+import Label from "@/components/label";
 import Sale from "@/components/salebanner";
-import View from "@/components/view/view";
-import Registration from "./registration";
-import Add from"@/app/Add/page";
-// import Checkout from "@/components/checkout/checkout";
-import Checkoutpage from "@/app/checkoutpage/index";
-import Login from "./login/page";
-
-
-
+import StaticBanner from "@/components/staticbanner";
+import Blog from "@/containers/blog";
+import Category from "@/containers/category";
+import NewArrival from "@/containers/newarrivals";
+import Trending from "@/containers/trending";
 
 
 
 export default function Home() {
-  return (
-    <>
-       <Carousel />
-      <Sale />
-      <NewArrival/>
-      <ProductCard img={""} name={""} price={""}/>
-      <Salebanner/>
-      <Add/>
-      {/* <Checkout/> */}
-      <Checkoutpage/>
-      <Login/>
-      <Registration/>
-      
-      
-      
-      
-      
-    </>
-  );
+	return (
+		
+		<>
+	
+		<Carousel/>
+		<Sale/>
+		<Category/>
+		<StaticBanner/>
+		<NewArrival/>
+		<Divider/>
+		<Trending/>
+		<Blog/>
+		<Label/>
+		
+		
+		</>
+				
+	);
 }
