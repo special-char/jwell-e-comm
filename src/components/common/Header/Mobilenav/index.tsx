@@ -12,6 +12,7 @@ import useToggleState from "@/lib/hooks/use-toggle-state";
 import { MobileNavType } from "@/utils/types";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import Image from "next/image";
 
 function MobileNav({ data }: MobileNavType) {
   const { state, open, close } = useToggleState();
@@ -21,7 +22,7 @@ function MobileNav({ data }: MobileNavType) {
     <>
       <div className={style.mobileNav}>
         <Link href={"/"} className={style.logoWrapper}>
-          <h1 className={style.heading1}>{data.heading1}</h1>
+        <Image src={"/images/trishna.jpg"} alt={"trishnaimage"} height={100} width={100}></Image>
           <h1 className={style.heading2}>{data.heading2}</h1>
         </Link>
 

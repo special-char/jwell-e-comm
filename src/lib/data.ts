@@ -8,8 +8,8 @@ import Phone from "@/public/icons/phone.svg";
 
 //----------------------------NAVBAR----------------------------------//
 export const navbarData = {
-	heading1: "Bea You",
-	heading2: ".",
+	heading1: "/images/trishna.jpg",
+	heading2: "",
 	navLinks: [
 		{
 			id: 1,
@@ -273,9 +273,12 @@ export const footerData = {
 //-----------------------------SHOP SECTION---------------------------------------------//
 
 export const shopPageBanner = {
-	backgroundBannerImage: "",
-	heading: "Shop",
+
+	url: "/images/bannerImage.png",
+	heading: "home/Shop",
 };
+
+
 
 export const products = [
 	{
@@ -283,23 +286,23 @@ export const products = [
 		handle: "product-1",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product1.png",
+			url: "/images/ringimage.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product2.png",
+				url: "/images/1-1.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product3.png",
+				url: "/images/1-2.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product1.png",
+				url: "/images/1-3.webp",
 			},
 		],
-		productName: "Nordic Chair",
+		productName: "Ring",
 		productPrice: "$50.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
@@ -311,23 +314,23 @@ export const products = [
 		handle: "product-2",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product2.png",
+			url: "/images/ring2image.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product2.png",
+				url: "/images/1-1.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product2.png",
+				url: "/images/1-3.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product2.png",
+				url: "/images/1-4.webp",
 			},
 		],
-		productName: "Kurzo Aero Chair",
+		productName: "pendent",
 		productPrice: "$78.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
@@ -339,23 +342,23 @@ export const products = [
 		handle: "product-3",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product3.png",
+			url: "/images/bracelateimage.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product3.png",
+				url: "/images/1-4.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product3.png",
+				url: "/images/1-5.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product3.png",
+				url: "/images/1-7.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
+		productName: "Ring",
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
@@ -367,24 +370,24 @@ export const products = [
 		handle: "product-4",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product1.png",
+			url: "/images/necklessimage.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product1.png",
+				url: "/images/1-6.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product1.png",
+				url: "/images/1-7.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product1.png",
+				url: "/images/1-9.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
-		productPrice: "$43.00",
+		productName: "neckless",
+		productPrice: "$53.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
 		reviewCount: 55,
@@ -395,24 +398,24 @@ export const products = [
 		handle: "product-5",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product2.png",
+			url: "/images/neackless2image.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product2.png",
+				url: "/images/1-2.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product2.png",
+				url: "/images/1-3.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product2.png",
+				url: "/images/1-4.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
-		productPrice: "$43.00",
+		productName: "Earrings",
+		productPrice: "$60.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
 		reviewCount: 55,
@@ -423,23 +426,23 @@ export const products = [
 		handle: "product-6",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product3.png",
+			url: "/images/ankletimage.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product3.png",
+				url: "/images/1-6.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product3.png",
+				url: "/images/1-7.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product3.png",
+				url: "/images/1-8.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
+		productName: "Ring",
 		productPrice: "$43.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
@@ -451,24 +454,24 @@ export const products = [
 		handle: "product-7",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product1.png",
+			url: "/images/watchimage.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product1.png",
+				url: "/images/1-8.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product1.png",
+				url: "/images/1-9.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product1.png",
+				url: "/images/1-1.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
-		productPrice: "$43.00",
+		productName: "Ring",
+		productPrice: "$73.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
 		reviewCount: 55,
@@ -479,24 +482,24 @@ export const products = [
 		handle: "product-8",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product2.png",
+			url: "/images/bangleimage.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product2.png",
+				url: "/images/1-1.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product2.png",
+				url: "/images/1-2.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product2.png",
+				url: "/images/1-3.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
-		productPrice: "$43.00",
+		productName: "Ring",
+		productPrice: "$20.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
 		reviewCount: 55,
@@ -507,24 +510,24 @@ export const products = [
 		handle: "product-9",
 		productThumbnail: {
 			id: 0,
-			url: "/images/product3.png",
+			url: "/images/nacklace3image.jpg",
 		},
 		productImages: [
 			{
 				id: 1,
-				url: "/images/product3.png",
+				url: "/images/1-4.webp",
 			},
 			{
 				id: 2,
-				url: "/images/product3.png",
+				url: "/images/1-5.webp",
 			},
 			{
 				id: 3,
-				url: "/images/product3.png",
+				url: "/images/1-6.webp",
 			},
 		],
-		productName: "Ergonomic Chair",
-		productPrice: "$43.00",
+		productName: "Ring",
+		productPrice: "$90.00",
 		productDescription:
 			"Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
 		reviewCount: 55,
@@ -549,23 +552,11 @@ export const productReviews = [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
 		rating: 5,
 	},
-	{
-		id: 3,
-		name: "Tomas Doe",
-		image: "/images/person-1.png",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
-		rating: 4,
-	},
-	{
-		id: 4,
-		name: "Tomas Doe",
-		image: "/images/person-1.png",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra amet, sodales faucibus nibh. Vivamus amet potenti ultricies nunc gravida duis. Nascetur scelerisque massa sodales.",
-		rating: 3,
-	},
+	
 ];
+
+
+
 //-------------------------------------ABOUT US -------------------------------------------//
 
 export const aboutUsPageBanner = {

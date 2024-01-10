@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 
+
 const inter = Inter({
 	style: ["normal"],
 	subsets: ["latin"],
@@ -30,7 +31,6 @@ export default function RootLayout({
 			<body className={`${inter.variable} relative font-sans`}>
 				<Header />
 				{children}
-				{modal}
 				<Footer />
 			</body>
 		</html>

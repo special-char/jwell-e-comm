@@ -1,15 +1,9 @@
-import HomeBanner from "@/containers/HomeBanner";
-import WhyChooseUs from "@/containers/WhyChooseUs";
-import TestimonialCarousel from "@/containers/TestimonialCarousel";
-import HomeProducts from "@/containers/HomeProducts";
+import React from 'react'
 
-export default function Home() {
-	return (
-		<main>
-			<HomeBanner />
-			<HomeProducts />
-			<WhyChooseUs />
-			<TestimonialCarousel />
-		</main>
-	);
+export default function page() {
+  return (
+	<div>
+	  1
+	</div>
+  )
 }

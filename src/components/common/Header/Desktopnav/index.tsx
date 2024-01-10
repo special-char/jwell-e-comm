@@ -6,6 +6,7 @@ import { DesktopNavType } from "@/utils/types";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import AccountBtn from "../AccountBtn";
+import Image from "next/image";
 
 const DesktopNav = ({ data }: DesktopNavType) => {
   const pathname = usePathname();
@@ -13,7 +14,7 @@ const DesktopNav = ({ data }: DesktopNavType) => {
   return (
     <div className={style.deskNav}>
       <Link href={"/"} className={style.logoWrapper}>
-        <h1 className={style.heading1}>{data.heading1}</h1>
+        <Image src={"/images/trishna.jpg"} alt={"trishnaimage"} height={100} width={100}></Image>
         <h1 className={style.heading2}>{data.heading2}</h1>
       </Link>
       <div className={style.contentWrapper}>
